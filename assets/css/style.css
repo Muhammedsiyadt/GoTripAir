@@ -56,7 +56,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -106,7 +106,7 @@ img {
 }
 
 p {
-  color: #39325a;
+  color: #000;
   font-size: 16px;
   margin-bottom: 15px;
   font-weight: 400;
@@ -249,7 +249,7 @@ p {
   border: 1px solid #ffc800;
   font-size: 15px;
   font-weight: 600;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: capitalize;
   position: relative;
   overflow: hidden;
@@ -278,7 +278,7 @@ p {
   border: 1px solid #ffffff;
   font-size: 15px;
   font-weight: 600;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: capitalize;
 }
 .btn-secondary:hover {
@@ -356,14 +356,32 @@ textarea.form-control {
   Navbar CSS
 ----------------------------------------- */
 .header-area .top-header-area {
-  background: #ffffff;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  background: #e9b312;
+  padding-top: 10px;
 }
 .header-area .top-header-area .contact-info {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 30px;
+}
+
+.header-area .social-icons {
+  margin-right: 15px;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.header-area .social-icons a {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+
+.header-area .social-icons a:hover {
+  color: #000000; 
 }
 .header-area .top-header-area .contact-info .content {
   display: flex;
@@ -373,15 +391,18 @@ textarea.form-control {
 .header-area .top-header-area .contact-info .content i {
   vertical-align: middle;
   margin-right: 8px;
-  color: #f9c613;
-  font-size: 22px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
   display: inline-block;
 }
 .header-area .top-header-area .contact-info .content a {
-  color: #000000;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
 }
 .header-area .top-header-area .contact-info .content a:hover {
-  color: #ffc800;
+  color: #000000;
 }
 .header-area .top-header-area .side-option {
   display: flex;
@@ -472,13 +493,19 @@ textarea.form-control {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+@media (max-width: 768px) {
+  .main-navbar-area.stickyadd{
+    padding-top: 0px;
+  padding-bottom: 0px;
+  }
+}
 .main-navbar-area.stickyadd .main-nav .navbar {
   padding: 0 0;
 }
 
 .main-navbar-area{
   border-top: 1px solid rgba(0, 0, 0, 0.075);
-  background-color: #222222;
+  background-color: #000;
 }
 
 
@@ -1150,13 +1177,13 @@ textarea.form-control {
   position: relative;
 }
 .home-banner-area.home-style-three .banner-content .sub-title {
-  color: #f9f8fe;
+  color: #f1f1f1;
 }
 .home-banner-area.home-style-three .banner-content h1 {
   color: #ffffff;
 }
 .home-banner-area.home-style-three .banner-content p {
-  color: #f9f8fe;
+  color: #f1eeee;
 }
 .home-banner-area.home-style-three .owl-carousel .slider-item::after {
   position: absolute;
@@ -1165,7 +1192,7 @@ textarea.form-control {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(130, 47, 34, 0.6) 0%, rgba(255, 255, 255, 0.151) 100%);
+  background: linear-gradient(90deg, rgba(130, 47, 34, 0.329) 0%, rgba(255, 255, 255, 0.151) 100%);
   z-index: 1;
 }
 .home-banner-area.home-style-three .owl-carousel .slider-item.item-one {
@@ -1187,9 +1214,9 @@ textarea.form-control {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #ffffff;
+  background: #000000;
   color: #ffc800;
-  border: 1px solid #ffc800;
+  border: 1px solid #ffc8001f;
   
 }
 .home-banner-area.home-style-three .owl-carousel .owl-nav button[class*=owl-]:hover {
@@ -1263,7 +1290,7 @@ textarea.form-control {
 
 .about-content .lead {
   font-size: 18px;
-  color: #39325a;
+  color: #000;
   margin-bottom: 20px;
 }
 
@@ -1286,14 +1313,18 @@ textarea.form-control {
   justify-content: center;
   flex-direction: column;
   padding: 20px;
-  background: #f9f9f9;
+  background: #ffffff;
+  border: #00000010 1px solid;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .feature-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-1px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border: #00000031 1px solid;
 }
 
 .feature-item i {
@@ -1304,7 +1335,7 @@ textarea.form-control {
 
 .feature-item span {
   font-size: 14px;
-  color: #000000;
+  color: #000;
   text-align: center;
 }
 
@@ -1861,6 +1892,7 @@ textarea.form-control {
 }
 .testimonial-section .testimonial-slider .slider-item .content .client-info h3 {
   margin-bottom: 0;
+  color: #000000;
 }
 .testimonial-section .testimonial-slider .slider-item .content .client-info span {
   color: #797979;
@@ -2008,6 +2040,7 @@ textarea.form-control {
 ----------------------------------------- */
 .tours-section {
   overflow: hidden;
+  padding-bottom: 100px;
 }
 .tours-section .item-single {
   position: relative;
@@ -2694,7 +2727,7 @@ textarea.form-control {
 	Footer CSS
 ----------------------------------------- */
 .footer-area {
-  background: linear-gradient(45deg, #000000, #1a1a1a);
+  background: #000;
   color: #ffffff;
   padding-bottom: 30px;
   position: relative;
@@ -2724,7 +2757,7 @@ textarea.form-control {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 150px;
+  width: 50px;
   height: 3px;
   background: #ffc800;
 }
@@ -2881,7 +2914,7 @@ textarea.form-control {
 
 /* Copyright Section */
 .copy-right-area {
-  margin-top: 50px;
+  margin-top: 20px;
   padding-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
@@ -4754,7 +4787,7 @@ textarea.form-control {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  background: #fd5056;
+  background: #ffc800;
   padding: 8px 13px;
   border-radius: 50%;
   z-index: 100;

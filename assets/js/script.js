@@ -34,16 +34,7 @@ jQuery(function($) {
 		fixedContentPos: false
     });
 
-    // Search Popup
-    $('#searchButton').magnificPopup({
-        removalDelay: 500,
-        callbacks: {
-            beforeOpen: function() {
-            this.st.mainClass = this.st.el.attr('data-effect');
-            }
-        },
-        midClick: true
-    });
+
 
     // Home Slider
     $('.banner-slider').owlCarousel({
@@ -161,8 +152,6 @@ jQuery(function($) {
         }, 0 );
     });
 
-	// Switch Btn
-	$('body').append("<div class='switch-box'><label id='switch' class='switch'><input type='checkbox' onchange='toggleTheme()' id='slider'><span class='slider round'></span></label></div>");
 
     try {
          // The Filterizr
@@ -204,95 +193,12 @@ jQuery(function($) {
     }, 0);
 
     // Nice Select JS
-    $('select').niceSelect();
-
-    // Subscribe Form
-    $('.newsletter-form').validator().on('submit', function(event) {
-        if (event.isDefaultPrevented()) {
-            // Handle The Invalid Form...
-            formErrorSub();
-            submitMSGSub(false, 'Please enter your email correctly.');
-        } else {
-            // Everything Looks Good!
-            event.preventDefault();
-        }
-    });
-
-    function callbackFunction(resp) {
-        if (resp.result === 'success') {
-            formSuccessSub();
-        } else {
-            formErrorSub();
-        }
-    }
-
-    function formSuccessSub() {
-        $('.newsletter-form')[0].reset();
-        submitMSGSub(true, 'Thank you for subscribing!');
-        setTimeout(function() {
-            $('#validator-newsletter').addClass('hide');
-        }, 4000)
-    }
-
-    function formErrorSub() {
-        $('.newsletter-form').addClass('animated shake');
-        setTimeout(function() {
-            $('.newsletter-form').removeClass('animated shake');
-        }, 1000)
-    }
-
-    function submitMSGSub(valid, msg) {
-        if (valid) {
-            var msgClasses = 'validation-success';
-        } else {
-            var msgClasses = 'validation-danger';
-        }
-        $('#validator-newsletter').removeClass().addClass(msgClasses).text(msg);
-    }
-
-    // AJAX MailChimp
-    $('.newsletter-form').ajaxChimp({
-        url: 'https://hibootstrap.us20.list-manage.com/subscribe/post?u=60e1ffe2e8a68ce1204cd39a5&amp;id=42d6d188d9', // Your url MailChimp
-        callback: callbackFunction
-    });
-
-    // Preloader
-    $(window).on('load', function(e) {
-        $('#loading')
-        .delay(100)
-        .queue(function() {
-            $(this).remove();
-        });
-    });
+    // $('select').niceSelect();
 
    
 }($));
 
- // function to set a given theme/color-scheme
- function setTheme(themeName) {
-    localStorage.setItem('jaunt_theme', themeName);
-    document.documentElement.className = themeName;
-}
 
-// function to toggle between light and dark theme
-function toggleTheme() {
-    if (localStorage.getItem('jaunt_theme') === 'theme-dark') {
-        setTheme('theme-light');
-    } else {
-        setTheme('theme-dark');
-    }
-}
-
-// Immediately invoked function to set the theme on initial load
-(function () {
-    if (localStorage.getItem('jaunt_theme') === 'theme-dark') {
-        setTheme('theme-dark');
-        document.getElementById('slider').checked = false;
-    } else {
-        setTheme('theme-light');
-    document.getElementById('slider').checked = true;
-    }
-})();
 
 
 

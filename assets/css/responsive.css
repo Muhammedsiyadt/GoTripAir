@@ -141,9 +141,9 @@
   }
 
   .home-banner-area .banner-content h1 {
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 33px;
   }
 
   .home-banner-area .banner-content p {
@@ -256,7 +256,7 @@
   }
 
   .home-banner-area.home-style-three .banner-content {
-    padding: 219px 0 150px;
+    padding: 237px 0 211px;
   }
 
   .home-banner-area.home-style-three .owl-carousel .owl-nav button[class*=owl-] {
@@ -477,6 +477,14 @@
 
   .page-title-area .page-title-content h1 {
     margin-bottom: 5px;
+    text-align: start;
+    margin-left: 8px;
+  }
+
+  .page-title-area .page-title-content ul{
+    margin-bottom: 5px;
+    text-align: start;
+    margin-left: 8px;
   }
 
   .team-section .social-link a {

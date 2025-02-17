@@ -1,4 +1,4 @@
-jQuery(function($) {
+jQuery(function ($) {
     'use strict';
 
     // Mean Menu
@@ -7,14 +7,14 @@ jQuery(function($) {
     });
 
     // Sticky Nav
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         $(window).scrollTop() >= 200 ?
-        $('.main-navbar-area').addClass('stickyadd') :
-        $('.main-navbar-area').removeClass('stickyadd');
+            $('.main-navbar-area').addClass('stickyadd') :
+            $('.main-navbar-area').removeClass('stickyadd');
     });
 
     // Language Popup
-    $('#languageButton').on('click', function(e) {
+    $('#languageButton').on('click', function (e) {
         $('.language > .menu').toggle();
         e.preventDefault();
     });
@@ -27,11 +27,11 @@ jQuery(function($) {
     // Popup Video
     $('.youtube-popup').magnificPopup({
         disableOn: 320,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
-		fixedContentPos: false
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
     });
 
 
@@ -141,22 +141,22 @@ jQuery(function($) {
 
     // Back To Top
     $('body').append("<div class='go-top'><i class='bx bx-up-arrow-alt'></i></div>");
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
         var scrolled = $(window).scrollTop();
         if (scrolled > 600) $('.go-top').addClass('active');
         if (scrolled < 600) $('.go-top').removeClass('active');
     });
-    $('.go-top').on('click', function() {
+    $('.go-top').on('click', function () {
         $('html, body').animate({
             scrollTop: '0',
-        }, 0 );
+        }, 0);
     });
 
 
     try {
-         // The Filterizr
+        // The Filterizr
         $('.filtr-container').filterizr();
-    } catch (err) {}
+    } catch (err) { }
 
     // Datepicker JS
     $('.date-select').datepicker({
@@ -188,17 +188,50 @@ jQuery(function($) {
         $('#minutes').html(minutes + '<span>Minutes</span>');
         $('#seconds').html(seconds + '<span>Seconds</span>');
     }
-    setInterval(function() {
+    setInterval(function () {
         makeTimer();
     }, 0);
 
     // Nice Select JS
     // $('select').niceSelect();
 
-   
+
 }($));
 
 
+const customCursor = document.createElement('div');
+customCursor.classList.add('custom-cursor');
+document.body.appendChild(customCursor);
+
+// Create trailing circle element
+const cursorTrail = document.createElement('div');
+cursorTrail.classList.add('cursor-trail');
+document.body.appendChild(cursorTrail);
+
+// Update cursor position based on mouse movement
+document.body.addEventListener('mousemove', (e) => {
+    const mouseX = e.pageX;
+    const mouseY = e.pageY;
+
+    // Move the custom cursor
+    customCursor.style.left = `${mouseX - 10}px`; // Offset by half the size of the cursor
+    customCursor.style.top = `${mouseY - 10}px`;  // Offset by half the size of the cursor
+
+    // Move the trailing circle
+    cursorTrail.style.left = `${mouseX - 20}px`;  // Offset by half the size of the trail
+    cursorTrail.style.top = `${mouseY - 20}px`;   // Offset by half the size of the trail
+
+    // Activate the trailing effect with smooth animation
+    cursorTrail.style.transform = 'scale(1)'; // Expands the trailing circle
+    cursorTrail.style.opacity = '1'; // Make it visible
+
+    // Reset trailing circle to its original state when mouse stops moving
+    clearTimeout(cursorTrail.timer);
+    cursorTrail.timer = setTimeout(() => {
+        cursorTrail.style.transform = 'scale(0)';
+        cursorTrail.style.opacity = '0';
+    }, 100); // Delay before resetting the trail
+});
 
 
 

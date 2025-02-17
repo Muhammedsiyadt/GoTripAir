@@ -60,6 +60,33 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 15px;  
+  height: 15px;
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #e9b312;
+  border: 1px solid #e9b312;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffc800; 
+  border: 1px solid black;
+}
+::selection {
+  background-color: #000000; 
+  color: #ffc800; 
+}
+
+
 .h1,
 .h2,
 .h3,
@@ -629,7 +656,7 @@ textarea.form-control {
   padding: 0;
   position: absolute;
   visibility: hidden;
-  background: rgb(233, 233, 233);
+  background: rgb(255, 255, 255);
   transition: 0.5s;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
 }
@@ -637,7 +664,30 @@ textarea.form-control {
 .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item {
   margin-left: 0;
   margin-right: 0;
+  border-bottom: 1px solid transparent; /* Start with a transparent border */
+  position: relative; /* To position the pseudo-element */
 }
+
+/* Create the animated border effect */
+.main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffc800;
+  transform: scaleX(0); /* Initially hide the border */
+  transform-origin: bottom right;
+  transition: transform 0.6s ease-out; /* Transition for the animation */
+}
+
+/* Hover effect to move the border from left to right */
+.main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item:hover::before {
+  transform: scaleX(1); /* Animate the border from left to right */
+  transform-origin: bottom left;
+}
+
 
 .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item a {
   font-size: 15px;
@@ -663,7 +713,7 @@ textarea.form-control {
   bottom: 0;
   width: 0;
   height: 2px;
-  background: #fd5056;
+  background: #ffc800;
   transition: 0.5s;
 }
 
@@ -1824,7 +1874,13 @@ textarea.form-control {
 .top-destination-section .item-single .content p {
   padding-top: 15px;
   font-size: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 
 .top-destination-section .item-single .content .list {
   padding: 0;
@@ -2817,12 +2873,25 @@ textarea.form-control {
   overflow: hidden;
 }
 
+.blog-section .content p{
+  display: none;
+}
+
 .blog-section .item-single {
   position: relative;
   overflow: hidden;
-  border-radius: 3px;
   transition: 0.5s;
-  box-shadow: 0px -2px 30px 0px rgba(102, 102, 102, 0.09);
+  box-shadow: 0px -2px 30px 0px rgba(102, 102, 102, 0.116);
+  background: #fff;
+}
+
+.view-detail-btn{
+  color: rgb(0, 0, 0);
+}
+
+.blog-section .item-single:hover .view-detail-btn{
+  color: #ffc800;
+  cursor: pointer;
 }
 
 .blog-section .item-single .content {
@@ -2864,6 +2933,7 @@ textarea.form-control {
 
 .blog-section .item-single .content h3 a {
   color: #090031;
+  font-family: 'Poppins', sans-serif;
 }
 
 .blog-section .item-single .content h3 a:hover {
@@ -2945,11 +3015,11 @@ textarea.form-control {
 }
 
 .blog-style-two .item-single:hover .content {
-  background-color: #4141a5;
+  background-color: #000000;
 }
 
 .blog-style-two .item-single:hover .content .info-list li {
-  color: #f9f8fe;
+  color: #ffc900;
 }
 
 .blog-style-two .item-single:hover .content .info-list li i {
@@ -2961,7 +3031,8 @@ textarea.form-control {
 }
 
 .blog-style-two .item-single:hover .content h3 a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: #ffc800;
 }
 
 .blog-style-two .item-single:hover .content p {
@@ -4081,17 +4152,28 @@ textarea.form-control {
   background: #ffffff;
   padding: 30px 5px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.055);
   border: 1px solid rgba(0, 0, 0, 0.11);
+  font-family: 'Poppins', sans-serif;
 }
 
 .widget-book-now .btn-primary{
   border: 0;
   border-radius: 0px;
+  border: 1px solid #ffc800;
 }
 
-.widget-book-now .btn-primary:hover{
-  border: 1px solid #ffc800;
+.bk-now .bk-now-heading{
+  color: #ffc900;
+}
+
+.widget-book-now h4{
+  color: #000;
+}
+
+
+.destinations-details-section .cnt-detail{
+  font-family: 'Poppins', sans-serif;
 }
 
 .destinations-details-section .destination-details-desc .image img {
@@ -4113,6 +4195,7 @@ textarea.form-control {
   margin-top: -4px;
   margin-bottom: 15px;
   font-size: 23px;
+  color: #000;
 }
 
 @media only screen and (max-width:767px) {
@@ -4139,6 +4222,7 @@ textarea.form-control {
   padding: 25px 30px;
   margin-bottom: 25px;
   background: #000000;
+  font-family: 'Poppins', sans-serif;
 }
 
 .destinations-details-section .destination-details-desc .info-content .content-list {
@@ -4457,7 +4541,7 @@ textarea.form-control {
 
 .destinations-details-section .widget-area .widget-article .article-item .content .list li:last-child {
   font-weight: 600;
-  color: #fd5056;
+  color: #ffc900;
 }
 
 .destinations-details-section .widget-area .widget-article .article-item:last-child {

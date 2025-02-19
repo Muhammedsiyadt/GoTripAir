@@ -1574,8 +1574,9 @@ textarea.form-control {
 
 .cta-buttons {
   margin-top: 10px;
-  margin-left: 350px;
+  text-align: end;
 }
+
 
 .cta-buttons .btn-primary {
   border-radius: 3px;
@@ -1611,6 +1612,8 @@ textarea.form-control {
   .cta-buttons {
     margin-top: 5px;
     margin-left: 0px;
+    margin-right: 0;
+    text-align: center;
     border-bottom: 1px solid #0000002a;
   }
 
@@ -3231,10 +3234,10 @@ textarea.form-control {
 
 .features-section .abt-ser-head{
   width: 100%;
-  text-align: center;
-  color: #000000;
+  color: #ffc800;
   padding: 10px;
-  background: #ffc800;
+  background: #000000;
+  /* text-align: center; */
 }
 .features-section .item-single::before {
   position: absolute;
@@ -6265,7 +6268,6 @@ textarea.form-control {
 .abt-section__service {
   background: #ffffff;
   padding: 17px;
-  border-radius: 5px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -6515,4 +6517,110 @@ textarea.form-control {
 
 .features-section :hover .item-single {
   color: #ffc800;
+}
+
+
+.abt-services {
+  background-color: #fff;
+}
+
+.abt-services__heading {
+  font-size: 55px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.abt-services__heading:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 3px;
+  background: #ffc800;
+}
+
+.abt-services__card {
+  background-color: white;
+  box-shadow: 0px 0px 0px 1px #0000000f;
+  padding: 30px 25px;
+  height: 100%;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 3px solid transparent;
+}
+
+.abt-services__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #ffc800;
+}
+
+.abt-services__card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 0;
+  background: #ffc800;
+  transition: all 0.3s ease;
+}
+
+.abt-services__card:hover:before {
+  height: 100%;
+}
+
+.abt-services__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000;
+  position: relative;
+  padding-left: 0;
+  transition: all 0.3s ease;
+}
+
+.abt-services__card:hover .abt-services__title {
+  padding-left: 15px;
+  color: #ffc800;
+}
+
+.abt-services__desc {
+  color: #000;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 0;
+  transition: all 0.3s ease;
+}
+
+.abt-services__card:hover .abt-services__desc {
+  padding-left: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .abt-services__card {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .abt-services__heading {
+    font-size: 1.3rem;
+  }
+  
+  .abt-services__title {
+    font-size: 1.15rem;
+  }
 }

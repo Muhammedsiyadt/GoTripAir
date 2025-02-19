@@ -599,7 +599,7 @@ textarea.form-control {
 
 .main-nav .navbar .navbar-nav .nav-item a {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   padding-left: 0;
   padding-right: 0;
@@ -1002,7 +1002,7 @@ textarea.form-control {
 
   .main-responsive-nav .main-responsive-menu.mean-container .mean-nav .navbar-nav {
     height: 300px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
   }
 
   .main-responsive-nav .main-responsive-menu.mean-container .mean-nav ul {
@@ -1026,7 +1026,7 @@ textarea.form-control {
   }
 
   .main-responsive-nav .main-responsive-menu.mean-container .navbar-nav {
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -1056,7 +1056,6 @@ textarea.form-control {
   }
 
   .main-responsive-nav .mean-container a.meanmenu-reveal {
-    padding-top: 12px;
     color: #ffffff;
   }
 
@@ -1573,8 +1572,13 @@ textarea.form-control {
   transition: color 0.5s ease-in-out;
 }
 
+.cta-buttons {
+  margin-top: 10px;
+  margin-left: 350px;
+}
 
 .cta-buttons .btn-primary {
+  border-radius: 3px;
   border: 1px solid #ffc800;
 }
 
@@ -1603,6 +1607,11 @@ textarea.form-control {
 
   .feature-item span {
     font-size: 12px;
+  }
+  .cta-buttons {
+    margin-top: 5px;
+    margin-left: 0px;
+    border-bottom: 1px solid #0000002a;
   }
 
   .cta-buttons .btn-primary,
@@ -3216,11 +3225,17 @@ textarea.form-control {
   overflow: hidden;
   text-align: center;
   background: #ffffff;
-  border-radius: 3px;
   transition: 0.5s;
-  box-shadow: 0px -2px 30px 0px rgba(102, 102, 102, 0.09);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.082);
 }
 
+.features-section .abt-ser-head{
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  padding: 10px;
+  background: #ffc800;
+}
 .features-section .item-single::before {
   position: absolute;
   content: "";
@@ -6129,6 +6144,7 @@ textarea.form-control {
 .abt-section__container {
   position: relative;
   z-index: 2;
+  border-bottom: 1px solid #0000002a;
 }
 
 /* Header Styles */
@@ -6170,7 +6186,7 @@ textarea.form-control {
 
 @media (max-width: 768px) {
   .hello {
-    border: #ffc900b0 1px solid;
+    border: #ffc90017 1px solid;
     margin-left: 0px;
     background: #ffffff;
   }
@@ -6184,7 +6200,7 @@ textarea.form-control {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 230px;
+  left: 202px;
   transform: translateX(-50%);
   width: 37%;
   border-bottom: 5px solid #ffc800;
@@ -6224,13 +6240,6 @@ textarea.form-control {
   background: #ffc80000;
 }
 
-.about-page .item-single {
-  border: 1px solid #ffc800;
-  /* Border around the whole element */
-  border-bottom: 7px solid #ffc800;
-  padding: 30px;
-}
-
 
 .abt-section__description span {
   color: #ffc900;
@@ -6248,14 +6257,14 @@ textarea.form-control {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  margin: 0 auto;
+  margin: 30px auto;
   max-width: 1200px;
 }
 
 /* Service Item */
 .abt-section__service {
   background: #ffffff;
-  padding: 23px 20px;
+  padding: 17px;
   border-radius: 5px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -6284,7 +6293,7 @@ textarea.form-control {
 }
 
 .abt-section__service-title {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #2c3e50;
   margin: 0;
@@ -6294,6 +6303,7 @@ textarea.form-control {
 .abt-section__video {
   padding: 20px;
   padding-top: 0px;
+  margin-top: 30px;
 }
 
 .abt-section__video-wrapper {
@@ -6411,11 +6421,12 @@ textarea.form-control {
 @media (max-width: 768px) {
   .abt-section__services {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 30px auto;
   }
 
   .abt-section__container .cta-buttons {
     padding-top: 10px;
+    border-bottom: 0;
   }
 
   .abt-section__title {
@@ -6429,7 +6440,7 @@ textarea.form-control {
   }
 
   .abt-section__description {
-    font-size: 14px;
+    font-size: 15px;
     margin-left: 5px;
     text-align: start;
   }
@@ -6464,6 +6475,9 @@ textarea.form-control {
   .abt-section__subtitle {
     margin-left: 5px;
   }
+  .features-section .abt-ser-head{
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -6482,7 +6496,7 @@ textarea.form-control {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 86px;
+    left: 78px;
     width: 50%;
     /* Adjust the width of the border */
     border-bottom: 5px solid #ffc800;

@@ -6611,7 +6611,7 @@ textarea.form-control {
 /* Responsive Adjustments */
 @media (max-width: 991px) {
   .abt-services__card {
-    margin-bottom: 25px;
+    margin-bottom: 2px;
   }
 }
 

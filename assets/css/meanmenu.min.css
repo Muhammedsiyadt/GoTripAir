@@ -87,7 +87,7 @@ a.meanmenu-reveal {
 .mean-container .mean-nav ul li li a {
     width: 80%;
     padding: 1em 10% 13px;
-    color: #677294;
+    color: #000;
     border-top: 1px solid #DBEEFD;
     opacity: 1;
     filter: alpha(opacity=75);

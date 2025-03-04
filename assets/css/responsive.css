@@ -256,9 +256,12 @@
   }
 
   .home-banner-area.home-style-three .banner-content {
-    padding: 237px 0 211px;
+    padding: 120px 0 170px;
   }
 
+  .form-control {
+    height: 48px;
+  }
   .home-banner-area.home-style-three .owl-carousel .owl-nav button[class*=owl-] {
     position: unset;
   }
@@ -648,14 +651,15 @@
   }
 
   .header-area .top-header-area {
-    padding: 15px 0;
+    padding: 10px;
+    padding-bottom: 0px;
   }
 
   .header-area .top-header-area .contact-info {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    margin-bottom: 13px;
+    margin-bottom: 0px;
     margin-top: -3px;
   }
 

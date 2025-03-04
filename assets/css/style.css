@@ -1,58 +1,4 @@
-/*
-@File: Jaunt Template Styles
 
-* This file contains the styling for the actual template, this
-is the file you need to edit to change the look of the
-template.
-
-This files table contents are outlined below>>>>>
-
-*******************************************
-*******************************************
-** - Google Fonts
-** - Default CSS
-** - Section Title CSS
-** - Navbar CSS
-** - Banner CSS
-** - About CSS
-** - Destination CSS
-** - Offers CSS
-** - Testimonial CSS
-** - Team CSS
-** - Tours CSS
-** - Blog CSS
-** - Features CSS
-** - Video CSS
-** - Footer CSS
-** - Page Title CSS
-** - Blog Details CSS
-** - Destinations Details CSS
-** - Pagination CSS
-** - Contact CSS
-** - Main Form CSS
-** - Terms of Service CSS
-** - Privacy Policy CSS
-** - FAQ CSS
-** - Error CSS
-** - Coming Soon CSS
-** - Member Details CSS
-** - Terms CSS
-** - Error CSS
-** - Pricing CSS
-** - Comingsoon CSS
-** - Cart CSS
-** - Booking CSS
-** - Go Top CSS
-** - Preloader CSS
-*/
-/* -----------------------------------------
-  Google Fonts
------------------------------------------ */
-@import url("https://fonts.googleapis.com/css2?family=Roboto&amp;family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&amp;display=swap");
-
-/* -----------------------------------------
-  Default CSS
------------------------------------------ */
 body {
   padding: 0;
   margin: 0;
@@ -61,29 +7,30 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 15px;  
+  width: 15px;
   height: 15px;
 }
 
 
 ::-webkit-scrollbar-track {
-  background-color: #000000;
+  background-color: #0092cc65;
 }
 
 
 ::-webkit-scrollbar-thumb {
-  background-color: #e9b312;
-  border: 1px solid #e9b312;
+  background-color: #0092cc;
+  border: 1px solid #0092cc;
 }
 
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #ffc800; 
+  background-color: #0092cc;
   border: 1px solid black;
 }
+
 ::selection {
-  background-color: #000000; 
-  color: #ffc800; 
+  background-color: #0092cc;
+  color: #ffffff;
 }
 
 
@@ -99,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #090031;
+  color: #0092cc;
   line-height: 1.4;
 }
 
@@ -245,7 +192,7 @@ p {
 .section-title h2 {
   font-size: 55px;
   font-weight: 700;
-  color: #000000;
+  color: #0092cc;
   line-height: 1;
   margin-top: -5px;
   margin-bottom: 25px;
@@ -256,7 +203,7 @@ p {
   font-size: 17px;
   font-weight: 500;
   margin-left: auto;
-  color: #000000c4;
+  color: #000000;
   margin-right: auto;
 }
 
@@ -288,7 +235,7 @@ p {
   padding: 12px 30px;
   z-index: 1;
   color: #ffffff;
-  background-color: #ffc800;
+  background-color: #0092cc;
   font-size: 15px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
@@ -298,7 +245,7 @@ p {
 }
 
 .btn-primary:hover {
-  color: #ffc800;
+  color: #0092cc;
   background-color: transparent;
 }
 
@@ -372,8 +319,8 @@ p {
   color: #090031;
   border: none;
   border-radius: 5px;
-  background-color: #ededed48;
-  border: #00000009 1px solid;
+  background-color: #ffffff;
+  border: #ffffff09 1px solid;
   transition: 0.5s;
   padding: 0 0 0 18px;
   font-size: 15px;
@@ -391,7 +338,7 @@ p {
 }
 
 .form-control:focus {
-  border-color: #ffc800;
+  border-color: #0092cc;
 }
 
 textarea.form-control {
@@ -403,9 +350,8 @@ textarea.form-control {
   Navbar CSS
 ----------------------------------------- */
 .header-area .top-header-area {
-  background: #e9b312;
+  background: #0092cc;
   padding-top: 15px;
-  padding-bottom: 5px;
 }
 
 .header-area .top-header-area .contact-info {
@@ -455,7 +401,7 @@ textarea.form-control {
 }
 
 .header-area .top-header-area .contact-info .content a:hover {
-  color: #000000;
+  color: #000;
 }
 
 .header-area .top-header-area .side-option {
@@ -555,9 +501,10 @@ textarea.form-control {
   width: 100%;
   z-index: 999;
   animation: slideInDown 1s 1;
-  background: #000000;
+  background: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
+  border-bottom: 2px solid #0092cc;
 }
 
 @media (max-width: 768px) {
@@ -573,7 +520,7 @@ textarea.form-control {
 
 .main-navbar-area {
   border-top: 1px solid rgba(0, 0, 0, 0.075);
-  background-color: #000;
+  background-color: #ffffff;
 }
 
 
@@ -598,7 +545,7 @@ textarea.form-control {
 }
 
 .main-nav .navbar .navbar-nav .nav-item a {
-  color: #ffffff;
+  color: #000;
   font-size: 15px;
   font-weight: 500;
   padding-left: 0;
@@ -608,7 +555,7 @@ textarea.form-control {
 }
 
 .main-nav .navbar .navbar-nav .nav-item a:hover {
-  color: #ffc800;
+  color: #4552ef;
 }
 
 .main-nav .navbar .navbar-nav .nav-item a:hover::before {
@@ -623,12 +570,12 @@ textarea.form-control {
   width: 100%;
   height: 1px;
   transform: scaleX(0);
-  background: #ffc800;
+  background: #4552ef;
   transition: 0.5s;
 }
 
 .main-nav .navbar .navbar-nav .nav-item a.active {
-  color: #ffc800;
+  color: #4552ef;
 }
 
 .main-nav .navbar .navbar-nav .nav-item a.active::before {
@@ -664,8 +611,10 @@ textarea.form-control {
 .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item {
   margin-left: 0;
   margin-right: 0;
-  border-bottom: 1px solid transparent; /* Start with a transparent border */
-  position: relative; /* To position the pseudo-element */
+  border-bottom: 1px solid transparent;
+  /* Start with a transparent border */
+  position: relative;
+  /* To position the pseudo-element */
 }
 
 /* Create the animated border effect */
@@ -676,15 +625,18 @@ textarea.form-control {
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #ffc800;
-  transform: scaleX(0); /* Initially hide the border */
+  background-color: #4552ef;
+  transform: scaleX(0);
+  /* Initially hide the border */
   transform-origin: bottom right;
-  transition: transform 0.6s ease-out; /* Transition for the animation */
+  transition: transform 0.6s ease-out;
+  /* Transition for the animation */
 }
 
 /* Hover effect to move the border from left to right */
 .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item:hover::before {
-  transform: scaleX(1); /* Animate the border from left to right */
+  transform: scaleX(1);
+  /* Animate the border from left to right */
   transform-origin: bottom left;
 }
 
@@ -692,14 +644,14 @@ textarea.form-control {
 .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item a {
   font-size: 15px;
   text-transform: capitalize;
-  color: #000000;
+  color: #000;
   padding-top: 9px;
   padding-bottom: 9px;
   padding-left: 16px;
 }
 
 .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item a:hover {
-  color: #ffc800;
+  color: #4552ef;
 }
 
 .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item a:hover::before {
@@ -1001,8 +953,8 @@ textarea.form-control {
   }
 
   .main-responsive-nav .main-responsive-menu.mean-container .mean-nav .navbar-nav {
-    height: 300px;
-    /* overflow-y: scroll; */
+    height: 250px;
+    overflow-y: scroll;
   }
 
   .main-responsive-nav .main-responsive-menu.mean-container .mean-nav ul {
@@ -1056,11 +1008,11 @@ textarea.form-control {
   }
 
   .main-responsive-nav .mean-container a.meanmenu-reveal {
-    color: #ffffff;
+    color: #0092cc;
   }
 
   .main-responsive-nav .mean-container a.meanmenu-reveal span {
-    background: #ffffff;
+    background: #0092cc;
   }
 
   .main-nav {
@@ -1089,7 +1041,7 @@ textarea.form-control {
 .home-banner-area .banner-content h1 {
   font-size: 50px;
   color: #090031;
-  margin-top: 35px;
+  margin-top: 10px;
   margin-bottom: 15px;
   line-height: 1.1;
 }
@@ -1117,7 +1069,7 @@ textarea.form-control {
   right: 18px;
   font-size: 22px;
   transform: translateY(-50%);
-  color: #4141a5;
+  color: #0092cc;
   z-index: 1;
 }
 
@@ -1397,7 +1349,6 @@ textarea.form-control {
 
 .home-banner-area.home-style-three .banner-content .sub-title {
   color: #ffffff;
-  border-bottom: 3px solid #ffc800;
   padding: 5px;
 }
 
@@ -1434,16 +1385,14 @@ textarea.form-control {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #000000;
-  color: #ffc800;
-  border: 1px solid #ffc8001f;
+  background: #fff;
+  border: 1px solid #0092cc;
 
 }
 
 .home-banner-area.home-style-three .owl-carousel .owl-nav button[class*=owl-]:hover {
   background: transparent;
-  color: #ffc800;
-  border: 1px solid #ffc8002a;
+  border: 1px solid #0092cc;
 }
 
 .home-banner-area.home-style-three .owl-carousel .owl-nav .owl-prev {
@@ -1456,17 +1405,18 @@ textarea.form-control {
 
 .home-banner-area.home-style-three .search-form {
   position: absolute;
-  bottom: 140px;
+  bottom: 214px;
   z-index: 1;
   left: 0;
   right: 0;
   margin: auto;
-  max-width: 1110px;
+  max-width: 1302px;
   padding: 30px 15px 15px 15px;
-  background: #f9f8fe;
+  background: #0092cc;
   border-radius: 3px;
-  border: 5px solid #ffffff;
+  border: 1px solid #ffffff;
   box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
+
 }
 
 .home-banner-area.home-style-three .search-form .btn-search {
@@ -1474,8 +1424,8 @@ textarea.form-control {
   transition: 0.5s;
   padding: 14px 0;
   width: 100%;
-  color: #ffffff;
-  background-color: #fd5056;
+  color: #0092cc;
+  background-color: #ffffff;
   border: 1px solid transparent;
   font-size: 18px;
   font-weight: 600;
@@ -1509,7 +1459,7 @@ textarea.form-control {
 .about-content h2 {
   font-size: 55px;
   font-weight: 700;
-  color: #000000;
+  color: #0092cc;
   line-height: 1;
   margin-top: -5px;
   margin-bottom: 25px;
@@ -1551,7 +1501,7 @@ textarea.form-control {
   transform: translateY(-1px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   border: #00000031 1px solid;
-  background-color: #000000;
+  background-color: #0092cc;
 }
 
 .feature-item span {
@@ -1562,12 +1512,16 @@ textarea.form-control {
 }
 
 .feature-item:hover span {
-  color: #ffc900;
+  color: #ffffff;
+}
+
+.feature-item:hover i {
+  color: #ffffff;
 }
 
 .feature-item i {
   font-size: 24px;
-  color: #ffc800;
+  color: #0092cc;
   margin-bottom: 10px;
   transition: color 0.5s ease-in-out;
 }
@@ -1580,7 +1534,7 @@ textarea.form-control {
 
 .cta-buttons .btn-primary {
   border-radius: 3px;
-  border: 1px solid #ffc800;
+  border: 1px solid #0092cc;
 }
 
 
@@ -1609,6 +1563,7 @@ textarea.form-control {
   .feature-item span {
     font-size: 12px;
   }
+
   .cta-buttons {
     margin-top: 5px;
     margin-left: 0px;
@@ -1631,7 +1586,7 @@ textarea.form-control {
   align-items: center;
   width: 80px;
   height: 80px;
-  background-color: #ffc800;
+  background-color: #0092cc;
   border-radius: 50%;
   position: absolute;
   z-index: 1;
@@ -1659,7 +1614,7 @@ textarea.form-control {
   opacity: 0;
   border-radius: 50%;
   background: transparent;
-  border: 2px solid #fdc650;
+  border: 2px solid #0092cc;
 }
 
 .video-btn::before {
@@ -1670,6 +1625,9 @@ textarea.form-control {
 /* -----------------------------------------
   	Destination CSS
 ----------------------------------------- */
+.destination-section {
+  background-color: #0bb4f70f;
+}
 .destination-section .filter-group {
   text-align: center;
   margin-bottom: 40px;
@@ -1754,13 +1712,13 @@ textarea.form-control {
 }
 
 .destination-section .item-single .content i {
-  color: #ffc800;
+  color: #0092cc;
   margin-right: 4px;
   vertical-align: -1px;
 }
 
 .destination-section .item-single .content span {
-  color: #ffc800;
+  color: #0092cc;
   font-size: 14px;
 }
 
@@ -1770,11 +1728,7 @@ textarea.form-control {
 }
 
 .destination-section .item-single .content h3 a {
-  color: #090031;
-}
-
-.destination-section .item-single .content h3 a:hover {
-  color: #fd5056;
+  color: #0092cc;
 }
 
 .destination-section .item-single .content p {
@@ -1794,44 +1748,47 @@ textarea.form-control {
 .destination-section .item-single .content .list li {
   display: inline-block;
   margin-right: 12px;
-  color: #797979;
+  font-weight: bold;
+  color: #464646;
 }
 
 .destination-section .item-single .content .list li:last-child {
   font-weight: 600;
   margin-right: 0;
-  color: #ffc800;
+  color: #464646;
   margin-left: auto;
 }
 
 .destination-section .item-single:hover .content {
-  background: #000000;
+  background: #0092cc;
   animation: fadeInUp 0.3s linear 1;
 }
 
 .destination-section .item-single:hover .content i {
-  color: #ffc800;
+  color: #ffffff;
 }
 
 .destination-section .item-single:hover .content span {
-  color: #d6d6d6;
+  color: #ffffff;
 }
 
 .destination-section .item-single:hover .content h3 a {
   transition: none;
-  color: #ffc800;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .destination-section .item-single:hover .content .list li {
-  color: #d6d6d6;
+  color: #ffffff;
 }
 
 .destination-section .item-single:hover .content .list li:last-child {
-  color: #ffc800;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .destination-section .item-single:hover .content p {
-  color: #d6d6d6;
+  color: #ffffff;
   display: block;
 }
 
@@ -1887,7 +1844,8 @@ textarea.form-control {
   padding-top: 15px;
   font-size: 15px;
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-line-clamp: 2;
+  /* Limit to 2 lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2041,6 +1999,10 @@ textarea.form-control {
 /* -----------------------------------------
   Offers CSS
 ----------------------------------------- */
+
+.offers-section{
+  background-color: #00b7ff0a;
+}
 .offers-section .item-single {
   position: relative;
   overflow: hidden;
@@ -2054,7 +2016,7 @@ textarea.form-control {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.596) 0%, rgba(0, 0, 0, 0.37) 100%);
+  background: linear-gradient(0deg, #0092cc54 0%, #0092cc21 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -2109,7 +2071,7 @@ textarea.form-control {
 }
 
 .offers-section .item-single .content .title h3 a:hover {
-  color: #ffc800;
+  color: #00b7ff;
 }
 
 .offers-section .item-single .content .title span {
@@ -2132,7 +2094,7 @@ textarea.form-control {
 }
 
 .offers-section .item-single .content .list li:last-child {
-  color: #ffc800;
+  color: #00b7ff;
   margin-right: 0;
   font-size: 20px;
   margin-left: auto;
@@ -2144,7 +2106,7 @@ textarea.form-control {
   right: 10px;
   border-radius: 50%;
   padding: 30px 10px 15px 10px;
-  background: #ffc800;
+  background: #0092cc;
   text-align: center;
 }
 
@@ -2284,7 +2246,7 @@ textarea.form-control {
 .testimonial-section .testimonial-slider::after {
   top: 15px;
   left: 15px;
-  background: #ffc800;
+  background: #0092cc;
   z-index: -2;
 }
 
@@ -2329,7 +2291,7 @@ textarea.form-control {
   right: 50px;
   top: 20px;
   font-size: 90px;
-  color: #ffc800;
+  color: #0092cc;
   opacity: 0.3;
 }
 
@@ -2338,7 +2300,7 @@ textarea.form-control {
 }
 
 .testimonial-section .testimonial-slider .slider-item .content .review i {
-  color: #f4b316;
+  color: #0092cc;
   vertical-align: -1px;
 }
 
@@ -2493,6 +2455,7 @@ textarea.form-control {
 .tours-section {
   overflow: hidden;
   padding-bottom: 100px;
+  background-color: #8b91e10d;
 }
 
 .tours-section .item-single {
@@ -2605,7 +2568,7 @@ textarea.form-control {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.596) 0%, rgba(0, 0, 0, 0.37) 100%);
+  background: linear-gradient(0deg, #0092cc54 0%, #0092cc21 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -2636,7 +2599,7 @@ textarea.form-control {
 
 .tours-section .slider-item .content .review i {
   margin-right: 0;
-  color: #f4b316;
+  color: #0092cc;
   vertical-align: -1px;
 }
 
@@ -2661,7 +2624,7 @@ textarea.form-control {
 
 .tours-section .slider-item .content .title h3 a:hover {
   letter-spacing: 1px;
-  color: #ffc800;
+  color: #0092cc;
 }
 
 .tours-section .slider-item .content .list {
@@ -2682,7 +2645,7 @@ textarea.form-control {
   margin-right: 0;
   font-size: 20px;
   margin-left: auto;
-  color: #ffc800;
+  color: #0092cc;
 }
 
 .tours-section .tours-slider .owl-nav {
@@ -2692,11 +2655,11 @@ textarea.form-control {
 }
 
 .tours-section .tours-slider .owl-nav button[class*=owl-] {
-  border: 1px solid #ffc800;
+  border: 1px solid #0092cc;
 }
 
 .tours-section .tours-slider .owl-nav button[class*=owl-]:hover {
-  background: #ffc800;
+  background: #00b7ff81;
   color: #ffffff;
 }
 
@@ -2885,7 +2848,7 @@ textarea.form-control {
   overflow: hidden;
 }
 
-.blog-section .content p{
+.blog-section .content p {
   display: none;
 }
 
@@ -2897,11 +2860,11 @@ textarea.form-control {
   background: #fff;
 }
 
-.view-detail-btn{
+.view-detail-btn {
   color: rgb(0, 0, 0);
 }
 
-.blog-section .item-single:hover .view-detail-btn{
+.blog-section .item-single:hover .view-detail-btn {
   color: #ffc800;
   cursor: pointer;
 }
@@ -3232,13 +3195,14 @@ textarea.form-control {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.082);
 }
 
-.features-section .abt-ser-head{
+.features-section .abt-ser-head {
   width: 100%;
   color: #ffc800;
   padding: 10px;
   background: #000000;
   /* text-align: center; */
 }
+
 .features-section .item-single::before {
   position: absolute;
   content: "";
@@ -3246,15 +3210,14 @@ textarea.form-control {
   right: -10px;
   width: 35px;
   height: 50px;
-  background: #9794a8;
   border-radius: 3px;
   z-index: 1;
   transform: skewX(20deg);
-  background: #ffc800;
+  background: #0092cc;
 }
 
 .features-section .item-single i {
-  color: #ffc800;
+  color: #0092cc;
   font-size: 40px;
   margin-top: -3px;
 }
@@ -3262,7 +3225,7 @@ textarea.form-control {
 .features-section .item-single h3 {
   margin-top: 15px;
   margin-bottom: 10px;
-  color: #ffc800;
+  color: #0092cc;
 }
 
 .features-section .item-single p {
@@ -3278,11 +3241,16 @@ textarea.form-control {
 
 .features-section .item-single .btn-primary:hover {
   color: #ffffff;
-  background-color: #ffc800;
+  background-color: #0092cc;
 }
 
 .features-section .item-single:hover {
-  background: #000000;
+  background: #0092cc;
+}
+
+.features-section .item-single:hover h3{
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .features-section .item-single:hover i {
@@ -3293,20 +3261,17 @@ textarea.form-control {
   color: #ffffff;
 }
 
-.features-section .item-single:hover h3 a:hover {
-  color: #fd5056;
-}
-
 .features-section .item-single:hover p {
-  color: #d6d6d6;
-}
-
-.features-section .item-single:hover .btn-primary {
   color: #ffffff;
 }
 
+.features-section .item-single:hover .btn-primary {
+  background-color: #fff;
+  color: #0092cc;
+}
+
 .features-section .item-single:hover .btn-primary:hover {
-  color: #ffc800;
+  color: #0092cc;
   background-color: #ffffff;
 }
 
@@ -3334,7 +3299,7 @@ textarea.form-control {
 	Footer CSS
 ----------------------------------------- */
 .footer-area {
-  background: #000;
+  background: #0092cc;
   color: #ffffff;
   padding-bottom: 30px;
   position: relative;
@@ -3366,7 +3331,7 @@ textarea.form-control {
   bottom: 0;
   width: 50px;
   height: 3px;
-  background: #ffc800;
+  background: #0015ff;
 }
 
 .widget-title::after {
@@ -3376,12 +3341,12 @@ textarea.form-control {
   bottom: 0;
   width: 50px;
   height: 3px;
-  background: #ffc800;
+  background: #0015ff;
 }
 
 /* Company Info Section */
 .company-desc {
-  color: #d6d6d6;
+  color: #fff;
   line-height: 1.8;
   margin-bottom: 25px;
   font-size: 15px;
@@ -3394,19 +3359,19 @@ textarea.form-control {
 .contact-item {
   display: flex;
   align-items: center;
-  color: #d6d6d6;
+  color: #fff;
   transition: all 0.3s ease;
 }
 
 .contact-item:hover {
-  color: #ffc800;
+  color: #0015ff;
   transform: translateX(5px);
 }
 
 .icon-wrapper {
   width: 35px;
   height: 35px;
-  background: rgba(255, 200, 0, 0.1);
+  background: rgba(0, 0, 0, 0.062);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -3415,7 +3380,7 @@ textarea.form-control {
 }
 
 .icon-wrapper i {
-  color: #ffc800;
+  color: #ffffff;
   font-size: 18px;
 }
 
@@ -3439,7 +3404,7 @@ textarea.form-control {
 }
 
 .news-content a {
-  color: #d6d6d6;
+  color: #fff;
   font-size: 15px;
   line-height: 1.6;
   display: block;
@@ -3448,11 +3413,11 @@ textarea.form-control {
 }
 
 .news-content a:hover {
-  color: #ffc800;
+  color: #0015ff;
 }
 
 .date {
-  color: #ffc800;
+  color: #ffffffcc;
   font-size: 13px;
   display: flex;
   align-items: center;
@@ -3472,25 +3437,25 @@ textarea.form-control {
 .link-item {
   display: flex;
   align-items: center;
-  color: #d6d6d6;
+  color: #fff;
   margin-bottom: 12px;
   transition: all 0.3s ease;
 }
 
 .link-item i {
   margin-right: 10px;
-  font-size: 14px;
-  color: #ffc800;
+  font-size: 17px;
+    color: #0015ff;
 }
 
 .link-item:hover {
-  color: #ffc800;
+  color: #0015ff;
   transform: translateX(8px);
 }
 
 /* Social Icons */
 .social-text {
-  color: #d6d6d6;
+  color: #fff;
   margin-bottom: 20px;
   line-height: 1.7;
 }
@@ -3503,19 +3468,19 @@ textarea.form-control {
 .social-icon {
   width: 40px;
   height: 40px;
-  background: rgba(255, 200, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffc800;
+  color: #ffffff;
   font-size: 20px;
   transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-  background: #ffc800;
-  color: #000000;
+  background: #ffffff;
+  color: #0092cc;
   transform: translateY(-5px);
 }
 
@@ -3533,17 +3498,17 @@ textarea.form-control {
 }
 
 .copy-right-content span {
-  color: #ffc800;
+  color: #0015ff;
 }
 
 .copy-right-content a {
-  color: #ffc800;
+  color: #0015ff;
   font-weight: 500;
 }
 
 .copy-right-content a {
   position: relative;
-  color: #ffc800;
+  color: #0015ff;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -3556,7 +3521,7 @@ textarea.form-control {
   height: 2px;
   bottom: -2px;
   left: 50%;
-  background: #ffc800;
+  background: #0015ff;
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -3581,6 +3546,11 @@ textarea.form-control {
     justify-content: center;
   }
 }
+
+.footer-logo-img {
+  filter: brightness(0) invert(1);
+}
+
 
 /* -----------------------------------------
   Page Title CSS
@@ -3663,7 +3633,7 @@ textarea.form-control {
   Blog Details CSS
 ----------------------------------------- */
 .blog-details-section .blog-details-desc {
-  padding-right: 40px;
+  padding-right: 0px;
 }
 
 @media only screen and (max-width:767px) {
@@ -4166,8 +4136,8 @@ textarea.form-control {
   border-radius: 3px;
 }
 
-.widget-book-now{
-  background: #ffffff;
+.widget-book-now {
+  background: linear-gradient(45deg, #FEFEFE, #DFDFDF);
   padding: 30px 5px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.055);
@@ -4175,23 +4145,27 @@ textarea.form-control {
   font-family: 'Poppins', sans-serif;
 }
 
-.widget-book-now .btn-primary{
+.widget-book-now .btn-primary {
   border: 0;
   border-radius: 0px;
   border: 1px solid #ffc800;
 }
 
-.bk-now .bk-now-heading{
-  color: #ffc900;
+.bk-now .bk-now-heading {
+  color: #292000;
 }
 
-.widget-book-now h4{
+.widget-book-now h4 {
   color: #000;
 }
 
 
-.destinations-details-section .cnt-detail{
-  font-family: 'Poppins', sans-serif;
+.destinations-details-section .cnt-detail {
+  font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #777777;
+    font-family: 'Roboto', sans-serif;
 }
 
 .destinations-details-section .destination-details-desc .image img {
@@ -4212,8 +4186,11 @@ textarea.form-control {
 .destinations-details-section .destination-details-desc .content h3 {
   margin-top: -4px;
   margin-bottom: 15px;
-  font-size: 23px;
+  font-size: 30px;
   color: #000;
+  text-transform: inherit;
+  font-style: italic;
+  font-weight: 600;
 }
 
 @media only screen and (max-width:767px) {
@@ -4533,11 +4510,11 @@ textarea.form-control {
 }
 
 .destinations-details-section .widget-area .widget-article .article-item .content h3 a {
-  color: #090031;
+  color: #000000;
 }
 
 .destinations-details-section .widget-area .widget-article .article-item .content h3 a:hover {
-  color: #fd5056;
+  color: #ffc900;
   text-decoration: underline;
 }
 
@@ -4625,6 +4602,7 @@ textarea.form-control {
   margin-top: -2px;
   margin-bottom: 20px;
   font-size: 22px;
+  color: #ffffff;
   text-transform: capitalize;
 }
 
@@ -4665,12 +4643,6 @@ textarea.form-control {
   overflow: hidden;
   background: #f9f9f9;
   padding: 60px 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .contact-wrapper {
@@ -4735,7 +4707,7 @@ textarea.form-control {
 }
 
 .content-list h6 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #ffc900;
   text-transform: uppercase;
@@ -4747,10 +4719,12 @@ textarea.form-control {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.content-text a{
+
+.content-text a {
   color: #000;
 }
-.content-text a:hover{
+
+.content-text a:hover {
   color: #ffc800;
   letter-spacing: 1px;
 }
@@ -4786,6 +4760,7 @@ textarea.form-control {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .main-form .btn-primary {
   text-align: center;
   display: inline-block;
@@ -4808,7 +4783,8 @@ textarea.form-control {
   background-color: transparent;
   border: 1px solid #ffc800;
 }
-#contactForm .sub-title{
+
+#contactForm .sub-title {
   display: none;
 }
 
@@ -4816,16 +4792,19 @@ textarea.form-control {
   .contact-wrapper {
     grid-template-columns: 1fr;
   }
-  .main-form .btn-primary{
+
+  .main-form .btn-primary {
     margin-left: 80px;
   }
-  #contactForm .sub-title{
+
+  #contactForm .sub-title {
     display: block;
     font-size: 24px;
     font-weight: 600;
     color: #000000;
     margin-bottom: 15px;
   }
+
   .contact-info,
   .main-form {
     padding: 20px;
@@ -5737,7 +5716,7 @@ textarea.form-control {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  background: #ffc800;
+  background: #0092cc;
   padding: 8px 13px;
   border-radius: 50%;
   z-index: 100;
@@ -5828,11 +5807,11 @@ textarea.form-control {
 
 .owl-carousel .owl-nav button[class*=owl-] i {
   vertical-align: -2px;
-  color: #ffc800;
+  color: #0092cc;
 }
 
 .owl-carousel .owl-nav button[class*=owl-] i:hover {
-  color: #000000;
+  color: #0092cc;
 }
 
 .owl-carousel .owl-nav button[class*=owl-]:last-child {
@@ -5930,7 +5909,7 @@ textarea.form-control {
 .datepicker-years table thead,
 .datepicker-decades table thead,
 .datepicker-centuries table thead {
-  background: #fd5056;
+  background: #0092cc;
   color: #ffffff;
   border-radius: 0;
 }
@@ -6013,26 +5992,26 @@ textarea.form-control {
 }
 
 .datepicker table tr td.active.active {
-  background-color: #fd5056;
+  background-color: #4552ef;
 }
 
 .datepicker table tr td.active.disabled.active,
 .datepicker table tr td.active.disabled:active {
-  background-color: #fd5056;
+  background-color: #4552ef;
 }
 
 .datepicker table tr td.active.disabled:hover.active,
 .datepicker table tr td.active.disabled:hover:active {
-  background-color: #fd5056;
+  background-color: #4552ef;
 }
 
 .datepicker table tr td.active:active {
-  background-color: #fd5056;
+  background-color: #4552ef;
 }
 
 .datepicker table tr td.active:hover.active,
 .datepicker table tr td.active:hover:active {
-  background-color: #fd5056;
+  background-color: #4552ef;
 }
 
 @keyframes ripple {
@@ -6162,7 +6141,7 @@ textarea.form-control {
   padding: 2px;
   margin-bottom: 20px;
   margin-left: 22px;
-  margin-right: 1px;
+  margin-top: 10px;
   padding-top: 10px;
 }
 
@@ -6181,10 +6160,6 @@ textarea.form-control {
   position: relative;
   /* To position the pseudo-element relative to the title */
   padding-bottom: 5px;
-}
-
-.abt-section__header {
-  width: 120%;
 }
 
 @media (max-width: 768px) {
@@ -6214,7 +6189,6 @@ textarea.form-control {
   font-size: 16px;
   color: #000;
   text-align: start;
-  margin-left: 20px;
   margin-bottom: 10px;
   font-family: 'Poppins', sans-serif;
 }
@@ -6224,7 +6198,6 @@ textarea.form-control {
   color: #000;
   line-height: 1.8;
   text-align: start;
-  margin-left: 20px;
   margin-bottom: 40px;
   font-family: 'Poppins', sans-serif;
 }
@@ -6310,7 +6283,7 @@ textarea.form-control {
 
 .abt-section__video-wrapper {
   position: relative;
-  border-radius: 15px;
+  border-radius: 7px;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
   background: #000;
@@ -6322,7 +6295,6 @@ textarea.form-control {
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 15px;
   transition: opacity 0.3s ease;
 }
 
@@ -6477,7 +6449,8 @@ textarea.form-control {
   .abt-section__subtitle {
     margin-left: 5px;
   }
-  .features-section .abt-ser-head{
+
+  .features-section .abt-ser-head {
     text-align: center;
   }
 }
@@ -6526,15 +6499,15 @@ textarea.form-control {
 
 .abt-services__heading {
   font-size: 55px;
-    font-weight: 700;
-    color: #000000;
-    line-height: 1.2;
-    margin-bottom: 25px;
-    margin-left: 20px;
-    font-family: 'Poppins', sans-serif;
-    position: relative;
-    padding-bottom: 5px;
-    position: relative;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  padding-bottom: 5px;
+  position: relative;
 }
 
 .abt-services__heading:after {
@@ -6560,8 +6533,8 @@ textarea.form-control {
 }
 
 .abt-services__card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transform: translateY(-0.1px);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
   border-bottom: 3px solid #ffc800;
 }
 
@@ -6611,7 +6584,7 @@ textarea.form-control {
 /* Responsive Adjustments */
 @media (max-width: 991px) {
   .abt-services__card {
-    margin-bottom: 2px;
+    margin-bottom: 25px;
   }
 }
 
@@ -6619,8 +6592,354 @@ textarea.form-control {
   .abt-services__heading {
     font-size: 1.3rem;
   }
-  
+
   .abt-services__title {
     font-size: 1.15rem;
+  }
+}
+
+
+/* DESTINATION DETAIL PAGE */
+
+.image-section {
+  margin-top: 20px;
+}
+
+.image-container {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+
+.image-container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.content-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  max-width: 100%;
+  z-index: 2;
+  color: white;
+  transition: bottom 0.3s ease;
+}
+
+.content-overlay h6 {
+  font-size: 35px;
+  font-style: italic;
+  color: #ffc800;
+}
+
+.content-overlay span {
+  font-size: 40px;
+  font-style: italic;
+  color: #fff;
+}
+
+.content-overlay strong {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.image-container:hover .content-overlay {
+  bottom: 20px;
+}
+
+.hover-button {
+  position: relative;
+  bottom: -50px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.image-container:hover .hover-button {
+  bottom: 0;
+  opacity: 1;
+}
+
+.content-overlay .cta-buttons {
+  text-align: start;
+}
+
+.content-overlay h2 {
+  color: #ffc900;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-weight: 600;
+  font-size: 25px;
+  font-style: italic;
+  width: 36%;
+  padding: 5px;
+  border-radius: 1px;
+}
+
+@media (max-width: 767px) {
+  .content-overlay h6 {
+    font-size: 16px;
+  }
+
+  .content-overlay span {
+    font-size: 25px;
+  }
+
+  .content-overlay strong {
+    font-size: 15px;
+  }
+
+  .image-container {
+    height: 250px;
+    padding: 0;
+  }
+
+  .image-section .content-overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+/* Itenary in destination detail page */
+
+.timeline-section {
+  padding: 40px 0;
+}
+
+.section-title-itenary{
+  font-weight: bold;
+  
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #ffc800;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: -3px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.timeline:hover::after {
+  background-color: #ffd700;
+}
+.timeline-card {
+  padding: 20px 30px;
+  position: relative;
+  background: linear-gradient(45deg, #FEFEFE, #DFDFDF);
+  /* border: solid 9px #dfdfdf; */
+  border-left: 0;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.timeline-card:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9; 
+}
+.timeline-card::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -13px;
+  background-color: #fff;
+  border: 4px solid #ffc800;
+  top: 20px;
+  border-radius: 50%;
+  z-index: 1;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+.timeline-card:hover::after {
+  background-color: #000000; 
+}
+
+.timeline-card h3 {
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+.timeline-card p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+.day-number {
+  display: inline-block;
+  background-color: #ffc800;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 20px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.timeline-card:hover .day-number {
+  background-color: #000;
+  color: #ffc800;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 991px) {
+  .timeline-card {
+    width: 85%;
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 767px) {
+  .timeline::after {
+    left: 10px;
+  }
+  .timeline-card {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 50px;
+    padding-right: 20px;
+  }
+  .timeline-card::after {
+    left: -8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .timeline::after {
+    left: 3px;
+  }
+  .timeline-card {
+    padding-left: 40px;
+    padding-right: 15px;
+  }
+  .timeline-card h3 {
+    font-size: 1.25rem;
+  }
+  .timeline-card p {
+    font-size: 0.95rem;
+  }
+  .day-number {
+    font-size: 0.9rem;
+    padding: 6px 16px;
+  }
+}
+
+.widget-area .info-content{
+  background-color: #000;
+  padding: 20px;
+}
+
+.widget-area .content-list span{
+  color: #ffc800;
+}
+
+
+.widget-area .content-list h6{
+  color: #777777;
+}
+
+
+/* Why Chose Us */
+
+.why-choose-us-section {
+  padding: 20px 0;
+  background: #fff;
+}
+.why-choose-us-content {
+  margin: 0 auto;
+  text-align: center;
+}
+.why-choose-us-content h2 {
+  color: #2c3e50;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+.why-choose-us-content h2::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: #ffc800;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.why-choose-us-content p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+.why-choose-us-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.why-choose-us-list li {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 20px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+.why-choose-us-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+.why-choose-us-list li::before {
+  content: '✓';
+  color: #ffc800;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 767px) {
+  .why-choose-us-list li {
+    width: 100%;
+  }
+  .why-choose-us-content h2 {
+    font-size: 2rem;
+  }
+  .why-choose-us-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .why-choose-us-content h2 {
+    font-size: 1.75rem;
+  }
+  .why-choose-us-content p {
+    font-size: 0.9rem;
   }
 }

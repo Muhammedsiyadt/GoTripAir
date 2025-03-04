@@ -3299,7 +3299,7 @@ textarea.form-control {
 	Footer CSS
 ----------------------------------------- */
 .footer-area {
-  background: #0092cc;
+  background: #4552ef;
   color: #ffffff;
   padding-bottom: 30px;
   position: relative;
@@ -3331,7 +3331,7 @@ textarea.form-control {
   bottom: 0;
   width: 50px;
   height: 3px;
-  background: #0015ff;
+  background: #72c2e2;
 }
 
 .widget-title::after {
@@ -3341,7 +3341,7 @@ textarea.form-control {
   bottom: 0;
   width: 50px;
   height: 3px;
-  background: #0015ff;
+  background: #72c2e2;
 }
 
 /* Company Info Section */
@@ -3364,7 +3364,7 @@ textarea.form-control {
 }
 
 .contact-item:hover {
-  color: #0015ff;
+  color: #6ad5ff;
   transform: translateX(5px);
 }
 
@@ -3413,7 +3413,7 @@ textarea.form-control {
 }
 
 .news-content a:hover {
-  color: #0015ff;
+  color: #6ad5ff;
 }
 
 .date {
@@ -3445,11 +3445,11 @@ textarea.form-control {
 .link-item i {
   margin-right: 10px;
   font-size: 17px;
-    color: #0015ff;
+  color: #72c2e2;
 }
 
 .link-item:hover {
-  color: #0015ff;
+  color: #6ad5ff;
   transform: translateX(8px);
 }
 
@@ -3508,7 +3508,7 @@ textarea.form-control {
 
 .copy-right-content a {
   position: relative;
-  color: #0015ff;
+  color: #6ad5ff;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -3521,7 +3521,7 @@ textarea.form-control {
   height: 2px;
   bottom: -2px;
   left: 50%;
-  background: #0015ff;
+  background: #00b7ff;
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }

@@ -49,7 +49,7 @@
         <div class="top-header-area">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-xl-6 col-lg-7">
+                    <div class="col-xl-6 col-6 col-lg-7">
                         <div class="contact-info">
                             <div class="content">
                                 <i class='bx bx-phone'></i>
@@ -61,12 +61,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-5">
+                    <div class="col-xl-6 col-6 col-lg-5">
                         <div class="social-icons">
-                            <a href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
-                            <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
-                            <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
-                            <a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                            <a  target="_blank"><i class='bx bxl-facebook'></i></a>
+                            <a  target="_blank"><i class='bx bxl-twitter'></i></a>
+                            <a  target="_blank"><i class='bx bxl-instagram'></i></a>
+                            <a  target="_blank"><i class='bx bxl-linkedin'></i></a>
                         </div>
                     </div>
                 </div>
@@ -81,8 +81,8 @@
                 <div class="container">
                     <div class="main-responsive-menu">
                         <div class="logo">
-                            <a href="/">
-                                <img src="assets/img/new/logo.png" style="width: 120px;" class="logo1" alt="Logo">
+                            <a >
+                                <img src="assets/img/new/logo.png" style="width: 150px;" class="logo1" alt="Logo">
                             </a>
                         </div>
                         <div class="cart responsive"></div>
@@ -93,24 +93,67 @@
             <div class="main-nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-md ">
-                        <a href="/" class="navbar-brand">
-                            <img src="assets/img/new/logo.png" style="width: 130px;" class="logo1" alt="Logo">
+                        <a  class="navbar-brand">
+                            <img src="assets/img/new/logo.png" style="width: 150px;" class="logo1" alt="Logo">
                         </a>
                         <div class="collapse navbar-collapse mean-menu">
                             <ul class="navbar-nav ms-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link toggle">Home</a>
-                                </li>
                                 <li class="nav-item">
                                     <a href="about-us.html" class="nav-link">About</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="holidays.html" class="nav-link toggle">Holidays</a>
+                                    <a href="holidays.html" class="nav-link toggle">Holidays <i class='bx bxs-chevron-down'></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a class="nav-link">Georgia</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link">Azerbaijan</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link">Armenia</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link">Kazakhstan</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link">Kyrgyzstan</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link">Uzbekistan</a>
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="global-visa.html" class="nav-link toggle">Global Visa</a>
+                                    <a class="nav-link toggle">Global Visa <i class='bx bxs-chevron-down'></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <a class="nav-link">UK</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link">US</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link">Austria</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link">Turkey</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link">India</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link">UAE</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link">Oman</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link">Saudi</a>
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <li class="nav-item">
@@ -136,9 +179,66 @@
                             <div class="banner-content">
                                 <span class="sub-title">Unleash the Explorer in You</span>
                                 <h1 class="text-uppercase">Escape to Breathtaking Destinations</h1>
-                                <div class="cta-buttons">
-                                    <a href="about-us.html"  class="btn-primary">Get More</a>
-                                    <a href="contact.html"  class="btn-primary">Contact Us</a>
+                                <div class="container">
+                                    <div class="search-form">
+                                        <form id="searchForm">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-11">
+                                                    <div class="row">
+                                                        <div class="col-lg-3">
+                                                            <div class="select-box">
+                                                                <i class='bx bx-map-alt'></i>
+                                                                <select class="form-control">
+                                                                    <option data-display='Destination'>Holidays</option>
+                                                                    <option value="1">Georgia</option>
+                                                                    <option value="2">Azerbaijan</option>
+                                                                    <option value="3">Armenia</option>
+                                                                    <option value="4">Kazakhstan</option>
+                                                                    <option value="4">Kyrgyzstan</option>
+                                                                    <option value="4">Uzbekistan</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="select-box">
+                                                                <i class='bx bx-calendar'></i>
+                                                                <input type="text" class="date-select form-control" placeholder="Select Date" required="required"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="select-box">
+                                                                <i class='bx bx-package'></i>
+                                                                <select class="form-control">
+                                                                    <option data-display='Travel Type'>Travel Type</option>
+                                                                    
+                                                                    <option value="2">Family Tours</option>
+                                                                    <option value="3">Seasonal Tours</option>
+                                                                    <option value="4">Outdoor Activities</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="select-box">
+                                                                <i class='bx bx-time'></i>
+                                                                <select class="form-control">
+                                                                    <option data-display='Tour Duration'>Days</option>
+                                                                    <option value="1">5 Days</option>
+                                                                    <option value="2">12 Days</option>
+                                                                    <option value="3">21 Days</option>
+                                                                    <option value="4">30 Days</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-1">
+                                                    <button type="button" class="btn-search">
+                                                        <i class='bx bx-search-alt'></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -148,9 +248,66 @@
                             <div class="banner-content">
                                 <span class="sub-title">Wander, Dream, Discover</span>
                                 <h1 class="text-uppercase">Turn Every Journey Into a Story</h1>
-                                <div class="cta-buttons">
-                                    <a href="about-us.html"  class="btn-primary">Get More</a>
-                                    <a href="contact.html"  class="btn-primary">Contact Us</a>
+                                <div class="container">
+                                    <div class="search-form">
+                                        <form id="searchForm">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-11">
+                                                    <div class="row">
+                                                        <div class="col-lg-3">
+                                                            <div class="select-box">
+                                                                <i class='bx bx-map-alt'></i>
+                                                                <select class="form-control">
+                                                                    <option data-display='Destination'>Holidays</option>
+                                                                    <option value="1">Georgia</option>
+                                                                    <option value="2">Azerbaijan</option>
+                                                                    <option value="3">Armenia</option>
+                                                                    <option value="4">Kazakhstan</option>
+                                                                    <option value="4">Kyrgyzstan</option>
+                                                                    <option value="4">Uzbekistan</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="select-box">
+                                                                <i class='bx bx-calendar'></i>
+                                                                <input type="text" class="date-select form-control" placeholder="Select Date" required="required"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="select-box">
+                                                                <i class='bx bx-package'></i>
+                                                                <select class="form-control">
+                                                                    <option data-display='Travel Type'>Travel Type</option>
+                                                                    
+                                                                    <option value="2">Family Tours</option>
+                                                                    <option value="3">Seasonal Tours</option>
+                                                                    <option value="4">Outdoor Activities</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="select-box">
+                                                                <i class='bx bx-time'></i>
+                                                                <select class="form-control">
+                                                                    <option data-display='Tour Duration'>Days</option>
+                                                                    <option value="1">5 Days</option>
+                                                                    <option value="2">12 Days</option>
+                                                                    <option value="3">21 Days</option>
+                                                                    <option value="4">30 Days</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-1">
+                                                    <button type="button" class="btn-search">
+                                                        <i class='bx bx-search-alt'></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -160,9 +317,66 @@
                             <div class="banner-content">
                                 <span class="sub-title">Your Next Adventure Awaits</span>
                                 <h1 class="text-uppercase">Travel Far, Create Memories</h1>
-                                <div class="cta-buttons">
-                                    <a href="about-us.html"  class="btn-primary">Get More</a>
-                                    <a href="contact.html"  class="btn-primary">Contact Us</a>
+                                <div class="container">
+                                    <div class="search-form">
+                                        <form id="searchForm">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-11">
+                                                    <div class="row">
+                                                        <div class="col-lg-3">
+                                                            <div class="select-box">
+                                                                <i class='bx bx-map-alt'></i>
+                                                                <select class="form-control">
+                                                                    <option data-display='Destination'>Holidays</option>
+                                                                    <option value="1">Georgia</option>
+                                                                    <option value="2">Azerbaijan</option>
+                                                                    <option value="3">Armenia</option>
+                                                                    <option value="4">Kazakhstan</option>
+                                                                    <option value="4">Kyrgyzstan</option>
+                                                                    <option value="4">Uzbekistan</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="select-box">
+                                                                <i class='bx bx-calendar'></i>
+                                                                <input type="text" class="date-select form-control" placeholder="Select Date" required="required"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="select-box">
+                                                                <i class='bx bx-package'></i>
+                                                                <select class="form-control">
+                                                                    <option data-display='Travel Type'>Travel Type</option>
+                                                                    
+                                                                    <option value="2">Family Tours</option>
+                                                                    <option value="3">Seasonal Tours</option>
+                                                                    <option value="4">Outdoor Activities</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="select-box">
+                                                                <i class='bx bx-time'></i>
+                                                                <select class="form-control">
+                                                                    <option data-display='Tour Duration'>Days</option>
+                                                                    <option value="1">5 Days</option>
+                                                                    <option value="2">12 Days</option>
+                                                                    <option value="3">21 Days</option>
+                                                                    <option value="4">30 Days</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-1">
+                                                    <button type="button" class="btn-search">
+                                                        <i class='bx bx-search-alt'></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -217,7 +431,7 @@
     <!-- end features section -->
 
     <!-- start destination section -->
-    <section id="destination" class="destination-section pt-100 pb-70 bg-light">
+    <section id="destination" class="destination-section pt-100 pb-70">
         <div class="container">
             <div class="section-title">
                 <h2 style="font-family: 'Poppins', sans-serif;">Holiday Packages</h2>
@@ -241,7 +455,7 @@
                             <hr>
                             <ul class="list">
                                 <li><i class='bx bx-time'></i>5 Days</li>
-                                <li>$800</li>
+                                <li>₹ 800</li>
                             </ul>
                         </div>
                         <div class="spacer"></div>
@@ -263,7 +477,7 @@
                             <hr>
                             <ul class="list">
                                 <li><i class='bx bx-time'></i>7 Days</li>
-                                <li>$1200</li>
+                                <li>₹ 1200</li>
                             </ul>
                         </div>
                         <div class="spacer"></div>
@@ -285,7 +499,7 @@
                             <hr>
                             <ul class="list">
                                 <li><i class='bx bx-time'></i>6 Days</li>
-                                <li>$900</li>
+                                <li>₹ 900</li>
                             </ul>
                         </div>
                         <div class="spacer"></div>
@@ -307,7 +521,7 @@
                             <hr>
                             <ul class="list">
                                 <li><i class='bx bx-time'></i>7 Days</li>
-                                <li>$1500</li>
+                                <li>₹ 1500</li>
                             </ul>
                         </div>
                         <div class="spacer"></div>
@@ -329,7 +543,7 @@
                             <hr>
                             <ul class="list">
                                 <li><i class='bx bx-time'></i>5 Days</li>
-                                <li>$1000</li>
+                                <li>₹ 1000</li>
                             </ul>
                         </div>
                         <div class="spacer"></div>
@@ -352,7 +566,7 @@
                             <hr>
                             <ul class="list">
                                 <li><i class='bx bx-time'></i>5 Days</li>
-                                <li>$850</li>
+                                <li>₹ 850</li>
                             </ul>
                         </div>
                         <div class="spacer"></div>
@@ -409,7 +623,7 @@
     <!-- end about section -->
 
     <!-- start offers section -->
-    <section id="offers" class="offers-section pt-100 pb-70 bg-light">
+    <section id="offers" class="offers-section pt-100 pb-70">
         <div class="container">
             <div class="section-title">
                 <h2 style="font-family: 'Poppins', sans-serif;">Special Holiday Offers & Discounts</h2>
@@ -647,7 +861,7 @@
 
 
     <!-- start tours section -->
-    <section id="tours" class="tours-section pt-100 pb-100 bg-light">
+    <section id="tours" class="tours-section pt-100 pb-100">
         <div class="container">
             <div class="section-title">
                 <h2 style="font-family: 'Poppins', sans-serif;">Recent Tours</h2>
@@ -774,8 +988,8 @@
                     <div class="col-lg-4 col-md-6 ">
                         <div class="footer-widget company-info">
                             <div class="navbar-brand mb-4 brand-wrapper">
-                                <a href="/">
-                                    <img src="assets/img/new/logo.png" style="width: 150px;" alt="Logo" />
+                                <a >
+                                    <img class="footer-logo-img" src="assets/img/new/logo.png" style="width: 150px;" alt="Logo" />
                                 </a>
                             </div>
                             <p class="company-desc">Plan your dream holiday with us and create unforgettable memories
@@ -829,7 +1043,7 @@
                         <div class="footer-widget">
                             <h5 class="widget-title">Quick Links</h5>
                             <ul class="footer-links">
-                                <li><a href="/" class="link-item"><i class='bx bx-chevron-right'></i>Home</a></li>
+                                <li><a class="link-item"><i class='bx bx-chevron-right'></i>Home</a></li>
                                 <li><a href="about-us.html" class="link-item"><i class='bx bx-chevron-right'></i>About Us</a></li>
                                 <li><a href="holidays.html" class="link-item"><i class='bx bx-chevron-right'></i>Holidays</a></li>
                                 <li><a href="global-visa.html" class="link-item"><i class='bx bx-chevron-right'></i>Global Visa</a></li>

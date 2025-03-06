@@ -7256,10 +7256,9 @@ textarea.form-control {
 .pricing-section .section-title {
   margin-top: -4px;
   margin-bottom: 15px;
-  font-size: 30px;
+  font-size: 25px;
   color: #0092cc;
   text-transform: inherit;
-  font-style: italic;
   font-weight: 600;
   text-align: start;
 }

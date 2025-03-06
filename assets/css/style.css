@@ -1622,6 +1622,7 @@ textarea.form-control {
   	Destination CSS
 ----------------------------------------- */
 .destination-section {
+  padding-top: 40px;
   background-color: #0bb4f70f;
 }
 
@@ -1893,18 +1894,19 @@ textarea.form-control {
   text-align: center;
   font-family: 'Poppins', sans-serif;
   position: relative;
+  font-weight: 700;
+  font-size: 50px;
 }
 
 #top-destination .section-title h2::before {
   content: '';
   position: absolute;
-  bottom: 0;
   left: 50%;
-  /* Center the border relative to h2 */
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #0092cc;
   transform: translateX(-50%);
-  /* Ensures the 50% width is centered */
-  width: 53%;
-  border-bottom: 5px solid #0092cc;
 }
 
 #top-destination .holidays-p {
@@ -2466,7 +2468,6 @@ textarea.form-control {
 .tours-section {
   overflow: hidden;
   padding-bottom: 100px;
-  background-color: #0bb4f70f;
   padding-top: 50px;
 }
 
@@ -2496,7 +2497,7 @@ textarea.form-control {
   position: absolute;
   left: 0;
   bottom: 0;
-  padding: 0px  10px 10px 10px;
+  padding: 0px 10px 10px 10px;
   width: 100%;
   z-index: 1;
 }
@@ -2511,7 +2512,7 @@ textarea.form-control {
   color: #d6d6d6;
   margin-right: 4px;
   vertical-align: -2px;
-  
+
 }
 
 .tours-section .item-single .content span {
@@ -3368,8 +3369,7 @@ textarea.form-control {
   font-size: 15px;
 }
 
-.contact-info .content {
-}
+.contact-info .content {}
 
 .contact-item {
   display: flex;
@@ -3379,7 +3379,7 @@ textarea.form-control {
 }
 
 .contact-item:hover {
-  color: #0015ff;
+  color: #fff;
   transform: translateX(5px);
 }
 
@@ -3428,7 +3428,8 @@ textarea.form-control {
 }
 
 .news-content a:hover {
-  color: #0015ff;
+  color: #fff;
+  transform: translateX(5px);
 }
 
 .date {
@@ -3464,7 +3465,7 @@ textarea.form-control {
 }
 
 .link-item:hover {
-  color: #0015ff;
+  color: #fff;
   transform: translateX(8px);
 }
 
@@ -4843,20 +4844,22 @@ textarea.form-control {
   margin-bottom: 10px;
   margin-top: 20px;
   font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .terms-of-services .content p,
 .privacy-policy .content p {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .terms-of-services .widget-area,
 .privacy-policy .widget-area {
   padding: 30px;
-  background: #f9f8fe;
+  background: #ffffff;
   border-radius: 3px;
   border: 5px solid #ffffff;
-  box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
+  box-shadow: 0px 0px 29px 0px rgba(24, 24, 24, 0.1);
 }
 
 .terms-of-services .widget-area ul,
@@ -4875,9 +4878,16 @@ textarea.form-control {
 .privacy-policy .widget-area ul li a {
   position: relative;
   display: block;
-  color: #090031;
+  color: #0092cc;
   font-size: 16px;
   font-weight: 500;
+}
+
+
+.terms-of-services .widget-area ul li a:hover,
+.privacy-policy .widget-area ul li a:hover {
+  text-decoration: none;
+  color: #0092cc;
 }
 
 .terms-of-services .widget-area ul li a i,
@@ -4887,23 +4897,22 @@ textarea.form-control {
   margin-right: 10px;
 }
 
-.terms-of-services .widget-area ul li a:hover,
-.privacy-policy .widget-area ul li a:hover {
-  text-decoration: underline;
-  color: #fd5056;
-}
-
-.terms-of-services .widget-area ul li a.active,
-.privacy-policy .widget-area ul li a.active {
-  color: #fd5056;
-  text-decoration: underline;
-}
 
 .terms-of-services .widget-area ul li:last-child,
 .privacy-policy .widget-area ul li:last-child {
   margin: 0;
 }
 
+.terms-of-services h4{
+  color: #000000;
+  font-weight: bold;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.terms-of-services .widget-area i{
+  color: #000000;
+}
 /* -----------------------------------------
   Privacy Policy CSS
 ----------------------------------------- */
@@ -6606,7 +6615,7 @@ textarea.form-control {
     width: 15%;
     height: 3px;
     background: #0092cc;
-}
+  }
 
   .abt-services__title {
     font-size: 1.15rem;
@@ -6911,7 +6920,8 @@ textarea.form-control {
   /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
   margin: 0 auto;
   position: relative;
-  overflow: hidden; /* Ensure decorative elements don't overflow */
+  overflow: hidden;
+  /* Ensure decorative elements don't overflow */
 }
 
 .why-choose-us h2 {
@@ -6971,7 +6981,8 @@ textarea.form-control {
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* Ensure clicks go through */
+  pointer-events: none;
+  /* Ensure clicks go through */
 }
 
 .bubble {
@@ -6983,7 +6994,8 @@ textarea.form-control {
 }
 
 .bubble:hover {
-  opacity: 1; /* Increase opacity on hover */
+  opacity: 1;
+  /* Increase opacity on hover */
 }
 
 /* Random Positioning for Bubbles */
@@ -6992,26 +7004,31 @@ textarea.form-control {
   left: 5%;
   animation-delay: 0s;
 }
+
 .bubble:nth-child(2) {
   top: 20%;
   right: 10%;
   animation-delay: 2s;
 }
+
 .bubble:nth-child(3) {
   top: 50%;
   left: 15%;
   animation-delay: 4s;
 }
+
 .bubble:nth-child(4) {
   top: 70%;
   right: 5%;
   animation-delay: 1s;
 }
+
 .bubble:nth-child(5) {
   top: 40%;
   right: 20%;
   animation-delay: 3s;
 }
+
 .bubble:nth-child(6) {
   top: 80%;
   left: 25%;
@@ -7020,9 +7037,12 @@ textarea.form-control {
 
 /* Floating Animation */
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0) rotate(0deg);
   }
+
   50% {
     transform: translateY(-20px) rotate(10deg);
   }
@@ -7032,33 +7052,35 @@ textarea.form-control {
 @media (max-width: 768px) {
   .bubble {
     font-size: 24px;
-    opacity: 0.2; /* Make bubbles less prominent on smaller screens */
+    opacity: 0.2;
+    /* Make bubbles less prominent on smaller screens */
   }
 }
 
 @media (max-width: 600px) {
   .why-choose-us {
-      padding: 20px;
+    padding: 20px;
   }
 
   .why-choose-us h2 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .why-choose-us ul li {
-      padding: 12px 15px;
+    padding: 12px 15px;
   }
 
   .why-choose-us ul li .icon {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .why-choose-us ul li .text {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .decorative-elements {
-    display: none; /* Hide decorative elements on very small screens */
+    display: none;
+    /* Hide decorative elements on very small screens */
   }
 }
 
@@ -7066,14 +7088,14 @@ textarea.form-control {
 /* Booking Form Page */
 .book-form-sec {
   padding: 80px 0;
-  background: white; 
+  background: white;
   position: relative;
   overflow: hidden;
 }
 
 .book-form-sec::before,
 .book-form-sec::after {
-  display: none; 
+  display: none;
 }
 
 /* Remove additional bubbles */
@@ -7117,14 +7139,15 @@ textarea.form-control {
 }
 
 .book-form-sec .featured-destinations h3 {
-  color: #0092cc; /* White text for the heading */
+  color: #0092cc;
+  /* White text for the heading */
   margin-bottom: 30px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.book-form-sec label{
+.book-form-sec label {
   color: #777777;
 }
 
@@ -7140,7 +7163,7 @@ textarea.form-control {
 
 .book-form-sec .destination-card:hover {
   transform: translateY(-10px);
-  background: rgba(255, 255, 255, 1); 
+  background: rgba(255, 255, 255, 1);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -7151,17 +7174,20 @@ textarea.form-control {
 }
 
 .book-form-sec .destination-card h5 {
-  color: #333; /* Dark text for destination name */
+  color: #333;
+  /* Dark text for destination name */
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .book-form-sec .destination-card p {
-  color: #0092cc; /* Blue text for price */
+  color: #0092cc;
+  /* Blue text for price */
   font-weight: bold;
 }
 
-.book-form-sec .form-control, .book-form-sec .form-select {
+.book-form-sec .form-control,
+.book-form-sec .form-select {
   border-radius: 10px;
   padding: 12px 15px;
   border: 1px solid #e0e0e0;
@@ -7186,9 +7212,9 @@ textarea.form-control {
 
 .book-form-sec .form-control:focus,
 .book-form-sec .form-select:focus {
-  border-color: #0092cc; 
-  box-shadow: 0 0 5px rgba(0, 146, 204, 0.1); 
-  outline: none; 
+  border-color: #0092cc;
+  box-shadow: 0 0 5px rgba(0, 146, 204, 0.1);
+  outline: none;
 }
 
 
@@ -7199,22 +7225,344 @@ textarea.form-control {
 
 @media (max-width: 992px) {
   .book-form-sec .featured-destinations {
-      margin-top: 50px;
+    margin-top: 50px;
   }
-  
+
   .book-form-sec .form-container {
-      padding: 30px;
+    padding: 30px;
   }
 }
 
 @media (max-width: 768px) {
   .book-form-sec {
-      padding: 50px 0;
+    padding: 50px 0;
   }
-  
+
   .book-form-sec .promo-tag {
-      right: -20px;
-      padding: 5px 30px;
-      font-size: 12px;
+    right: -20px;
+    padding: 5px 30px;
+    font-size: 12px;
   }
+}
+
+
+/* Pricing in destination detail page */
+/* Pricing Section */
+.pricing-section {
+  padding: 10px 0;
+  background: white;
+}
+
+.pricing-section .section-title {
+  margin-top: -4px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: #0092cc;
+  text-transform: inherit;
+  font-style: italic;
+  font-weight: 600;
+  text-align: start;
+}
+
+.pricing-section .table-responsive {
+  overflow-x: auto;
+  margin: 0 auto;
+  border-radius: 0px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-section .pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.pricing-section .pricing-table th,
+.pricing-section .pricing-table td {
+  padding: 15px;
+  text-align: left;
+}
+
+.pricing-section .pricing-table th {
+  background: #0092cc;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pricing-section .pricing-table td {
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.pricing-section .pricing-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-section .pricing-table tbody tr:hover {
+  background: rgba(0, 146, 204, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pricing-section .section-title {
+    font-size: 28px;
+  }
+
+  .pricing-section .pricing-table th,
+  .pricing-section .pricing-table td {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .pricing-section .pricing-table th,
+  .pricing-section .pricing-table td {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+
+/* Global Visa Section */
+
+.global-visa-section .global-visa-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.global-visa-section hr {
+  color: #0092cc;
+}
+
+.global-visa-section .visa-image {
+  flex: 1;
+}
+
+.global-visa-section .visa-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.global-visa-section .visa-details {
+  flex: 1;
+  padding: 40px;
+}
+
+.global-visa-section .visa-title {
+  font-size: 32px;
+  color: #0092cc;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.global-visa-section .visa-description,
+.global-visa-section .visa-info {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.global-visa-section .visa-info {
+  font-style: italic;
+  color: #777;
+}
+
+.global-visa-section .visa-highlight {
+  background: rgba(0, 146, 204, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.global-visa-section .highlight-title {
+  font-size: 24px;
+  color: #0092cc;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.global-visa-section .highlight-text {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.global-visa-section .learn-more-btn {
+  display: inline-block;
+  background: #0092cc;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 0px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  border: 1px solid #0092cc;
+}
+
+.global-visa-section .learn-more-btn:hover {
+  background: #fff;
+  color: #0092cc;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .global-visa-section .global-visa-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .global-visa-section.visa-image img {
+    max-height: 300px;
+  }
+
+  .global-visa-section.visa-details {
+    padding: 20px;
+  }
+
+  .global-visa-section.visa-title {
+    font-size: 28px;
+  }
+
+  .global-visa-section.visa-description,
+  .global-visa-section.visa-info {
+    font-size: 14px;
+  }
+
+  .global-visa-section .highlight-title {
+    font-size: 22px;
+  }
+
+  .global-visa-section .highlight-text {
+    font-size: 16px;
+  }
+
+  .global-visa-section .learn-more-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .global-visa-section {
+    padding: 50px 0;
+  }
+
+  .global-visa-section .visa-title {
+    font-size: 24px;
+  }
+
+  .global-visa-section .highlight-title {
+    font-size: 20px;
+  }
+
+  .global-visa-section .highlight-text {
+    font-size: 14px;
+  }
+}
+
+/* Global Enquiry Form Styles */
+.global-enquiry-form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 800px;
+  border: 1px solid #0092cc;
+}
+
+.globa-visa-enquiry-form .form-title {
+  font-size: 24px;
+  color: #0092cc;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.global-enquiry-form .form-group {
+  margin-bottom: 20px;
+}
+
+.global-enquiry-form label {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.global-enquiry-form .form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 0px;
+  font-size: 16px;
+  color: #333;
+  background: #ededed9c;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.global-enquiry-form .form-control:focus {
+  border-color: #0092cc;
+  outline: none;
+}
+
+.global-enquiry-form .submit-btn {
+  background: #0092cc;
+  margin-top: 20px;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 0px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: 1px solid #0092cc;
+}
+
+.global-enquiry-form .submit-btn:hover {
+  background: #fff;
+  color: #0092cc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .global-enquiry-form {
+    padding: 20px;
+  }
+
+  .global-enquiry-form .form-title {
+    font-size: 22px;
+  }
+
+  .global-enquiry-form .form-control {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .global-enquiry-form .submit-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+.devider-section .container {
+  height: 1px;
+  background-color: #0092cc;
+  text-align: center;
 }

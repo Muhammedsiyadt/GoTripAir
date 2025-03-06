@@ -347,7 +347,7 @@ textarea.form-control {
   Navbar CSS
 ----------------------------------------- */
 .header-area .top-header-area {
-  background: #0092cc;
+  background: linear-gradient(45deg, #0092CC, #4754EF);
   padding-top: 5px;
 }
 
@@ -3316,7 +3316,7 @@ textarea.form-control {
 	Footer CSS
 ----------------------------------------- */
 .footer-area {
-  background: #0092cc;
+  background: linear-gradient(45deg, #0092CC, #4754EF);
   color: #ffffff;
   padding-bottom: 30px;
   position: relative;

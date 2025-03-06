@@ -348,7 +348,7 @@ textarea.form-control {
 ----------------------------------------- */
 .header-area .top-header-area {
   background: #0092cc;
-  padding-top: 10px;
+  padding-top: 6px;
 }
 
 .header-area .top-header-area .contact-info {
@@ -3369,7 +3369,6 @@ textarea.form-control {
 }
 
 .contact-info .content {
-  margin-bottom: 15px;
 }
 
 .contact-item {

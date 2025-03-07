@@ -347,7 +347,7 @@ textarea.form-control {
   Navbar CSS
 ----------------------------------------- */
 .header-area .top-header-area {
-  background: linear-gradient(45deg, #0092CC, #4754EF);
+  background: linear-gradient(45deg, #0092CC, #157fd9);
   padding-top: 5px;
 }
 
@@ -564,7 +564,7 @@ textarea.form-control {
   width: 100%;
   height: 1px;
   transform: scaleX(0);
-  background: #0092cc;
+  background: linear-gradient(45deg, #0092CC, #157fd9);
   transition: 0.5s;
 }
 
@@ -1007,7 +1007,7 @@ textarea.form-control {
   }
 
   .main-responsive-nav .mean-container a.meanmenu-reveal span {
-    background: #0092cc;
+    background: linear-gradient(45deg, #0092CC, #157fd9);
   }
 
   .main-nav {
@@ -2119,7 +2119,7 @@ textarea.form-control {
   right: 10px;
   border-radius: 50%;
   padding: 30px 10px 15px 10px;
-  background: #0092cc;
+  background: linear-gradient(45deg, #0092CC, #157fd9);
   text-align: center;
 }
 
@@ -2259,7 +2259,7 @@ textarea.form-control {
 .testimonial-section .testimonial-slider::after {
   top: 15px;
   left: 15px;
-  background: #0092cc;
+  background: linear-gradient(45deg, #0092CC, #157fd9);
   z-index: -2;
 }
 
@@ -3230,7 +3230,7 @@ textarea.form-control {
   border-radius: 3px;
   z-index: 1;
   transform: skewX(20deg);
-  background: #0092cc;
+  background: linear-gradient(45deg, #0092CC, #157fd9);
 }
 
 .features-section .item-single i {
@@ -3262,7 +3262,7 @@ textarea.form-control {
 }
 
 .features-section .item-single:hover {
-  background: #0092cc;
+  background: linear-gradient(45deg, #0092CC, #157fd9);
 }
 
 .features-section .item-single:hover h3 {
@@ -3316,7 +3316,7 @@ textarea.form-control {
 	Footer CSS
 ----------------------------------------- */
 .footer-area {
-  background: linear-gradient(45deg, #0092CC, #4754EF);
+  background: linear-gradient(45deg, #0092CC, #157fd9);
   color: #ffffff;
   padding-bottom: 30px;
   position: relative;
@@ -3369,7 +3369,6 @@ textarea.form-control {
   font-size: 15px;
 }
 
-.contact-info .content {}
 
 .contact-item {
   display: flex;
@@ -4717,7 +4716,7 @@ textarea.form-control {
 }
 
 .content-list i {
-  background: #0092cc;
+  background: linear-gradient(45deg, #0092CC, #157fd9);
   color: #fff;
   padding: 10px;
   border-radius: 50%;
@@ -4850,8 +4849,19 @@ textarea.form-control {
 
 .terms-of-services .content p,
 .privacy-policy .content p {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
+
+.terms-of-services .content li{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.terms-of-services .cta-buttons {
+  text-align: start;
+  margin-top: 50px;
+} 
 
 .terms-of-services .widget-area,
 .privacy-policy .widget-area {
@@ -5728,7 +5738,7 @@ textarea.form-control {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  background: #0092cc;
+  background: linear-gradient(45deg, #0092CC, #157fd9);
   padding: 8px 13px;
   border-radius: 50%;
   z-index: 100;
@@ -5812,7 +5822,6 @@ textarea.form-control {
   background: #ffffff;
   margin-right: 12px;
   transition: 0.5s;
-  color: #fd5056;
   text-align: center;
   font-size: 26px;
 }
@@ -5921,7 +5930,7 @@ textarea.form-control {
 .datepicker-years table thead,
 .datepicker-decades table thead,
 .datepicker-centuries table thead {
-  background: #0092cc;
+  background: linear-gradient(45deg, #0092CC, #157fd9);
   color: #ffffff;
   border-radius: 0;
 }
@@ -6531,7 +6540,7 @@ textarea.form-control {
   transform: translateX(-50%);
   width: 7%;
   height: 3px;
-  background: #0092cc;
+  background: linear-gradient(45deg, #0092CC, #157fd9);
 }
 
 .abt-services__card {
@@ -6558,7 +6567,7 @@ textarea.form-control {
   left: 0;
   width: 5px;
   height: 0;
-  background: #0092cc;
+  background: linear-gradient(45deg, #0092CC, #157fd9);
   transition: all 0.3s ease;
 }
 
@@ -6614,7 +6623,7 @@ textarea.form-control {
     transform: translateX(-50%);
     width: 15%;
     height: 3px;
-    background: #0092cc;
+    background: linear-gradient(45deg, #0092CC, #157fd9);
   }
 
   .abt-services__title {
@@ -7126,7 +7135,7 @@ textarea.form-control {
   position: absolute;
   width: 200px;
   height: 4px;
-  background: #0092cc;
+  background: linear-gradient(45deg, #0092CC, #157fd9);
   bottom: 0;
   left: 0;
 }
@@ -7200,7 +7209,7 @@ textarea.form-control {
   position: absolute;
   top: 20px;
   right: -30px;
-  background: #0092cc;
+  background: linear-gradient(45deg, #0092CC, #157fd9);
   color: white;
   padding: 5px 40px;
   transform: rotate(45deg);
@@ -7285,7 +7294,7 @@ textarea.form-control {
 }
 
 .pricing-section .pricing-table th {
-  background: #0092cc;
+  background-color: #0092CC;
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -7401,7 +7410,7 @@ textarea.form-control {
 
 .global-visa-section .learn-more-btn {
   display: inline-block;
-  background: #0092cc;
+  background: linear-gradient(45deg, #0092CC, #157fd9);
   color: white;
   padding: 12px 30px;
   border-radius: 0px;
@@ -7520,7 +7529,7 @@ textarea.form-control {
 }
 
 .global-enquiry-form .submit-btn {
-  background: #0092cc;
+  background: linear-gradient(45deg, #0092CC, #157fd9);
   margin-top: 20px;
   color: white;
   padding: 12px 30px;

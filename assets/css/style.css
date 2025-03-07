@@ -317,7 +317,7 @@ p {
   border: none;
   border-radius: 5px;
   background-color: #ffffff;
-  border: #ffffff09 1px solid;
+  border: 1px solid #00000069;
   transition: 0.5s;
   padding: 0 0 0 18px;
   font-size: 15px;
@@ -329,18 +329,25 @@ p {
   transition: 0.5s;
 }
 
+.terms-of-services .book-form h4 {
+  color: #0092CC;
+}
+
+
+
 .form-control::placeholder {
   color: #00000062;
   transition: 0.5s;
 }
 
 .form-control:focus {
-  border-color: #0092cc;
+  border: 1px solid #00b7ff;
 }
 
 textarea.form-control {
   height: auto;
   padding-top: 15px;
+  border: 1px solid #00000069;
 }
 
 /* -----------------------------------------
@@ -4824,6 +4831,7 @@ textarea.form-control {
 .terms-of-services .image,
 .privacy-policy .image {
   border-radius: 5px;
+  position: relative;
   overflow: hidden;
   margin-bottom: 30px;
 }
@@ -4840,12 +4848,15 @@ textarea.form-control {
 
 .terms-of-services .content h3,
 .privacy-policy .content h3 {
-  margin-bottom: 10px;
-  margin-top: 20px;
-  font-size: 25px;
-  font-weight: bold;
-  font-style: italic;
+  font-family: "Roboto", Sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 48px;
+  letter-spacing: 1.5px;
+  -webkit-text-stroke-color: #000;
+  stroke: #000;
 }
+
 
 .terms-of-services .content p,
 .privacy-policy .content p {
@@ -4853,15 +4864,15 @@ textarea.form-control {
   font-size: 20px;
 }
 
-.terms-of-services .content li{
+.terms-of-services .content li {
   margin-bottom: 20px;
   font-size: 20px;
 }
 
 .terms-of-services .cta-buttons {
-  text-align: start;
+  text-align: center;
   margin-top: 50px;
-} 
+}
 
 .terms-of-services .widget-area,
 .privacy-policy .widget-area {
@@ -4870,6 +4881,33 @@ textarea.form-control {
   border-radius: 3px;
   border: 5px solid #ffffff;
   box-shadow: 0px 0px 29px 0px rgba(24, 24, 24, 0.1);
+}
+
+.terms-of-services .last-btn button {
+  margin-top: 0;
+  width: 85%;
+  background: #25D366;
+  border-radius: 5px;
+  border: 0;
+  position: relative; 
+  padding-bottom: 10px;
+}
+
+.terms-of-services .last-btn button::before {
+  content: ""; 
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  height: 3px; 
+  background-color: #ffde59;
+  opacity: 3; 
+}
+
+
+.terms-of-services  .last-btn:hover button{
+  background: #00ff5e;
+  color: #000000;
 }
 
 .terms-of-services .widget-area ul,
@@ -4913,16 +4951,52 @@ textarea.form-control {
   margin: 0;
 }
 
-.terms-of-services h4{
+.terms-of-services h4 {
   color: #000000;
   font-weight: bold;
   padding: 10px;
   padding-left: 0;
 }
 
-.terms-of-services .widget-area i{
+.terms-of-services .widget-area i {
   color: #000000;
 }
+
+.terms-of-services .promo-tag {
+  background: linear-gradient(45deg, #0092CC, #157fd9);
+  color: white;
+  padding: 5px 40px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding-left: 5px;
+}
+
+@media (max-width: 767px) {
+
+  .terms-of-services .content h3,
+  .privacy-policy .content h3 {
+
+    font-size: 24px;
+    line-height: 1.5em;
+  }
+
+  .terms-of-services .content p,
+  .privacy-policy .content p {
+    font-size: 15px;
+  }
+
+  .terms-of-services .content li {
+    font-size: 15px;
+  }
+
+  .terms-of-services .cta-buttons{
+    border-bottom: 0;
+  }
+}
+
+
 /* -----------------------------------------
   Privacy Policy CSS
 ----------------------------------------- */
